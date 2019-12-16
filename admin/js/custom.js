@@ -1,29 +1,11 @@
 $(document).ready(function () {
 
-    /*
-     * Generate canonical name for work title
-     */
-    $('#brands-brand_name').keyup(function () {
+    $('#panoramavisualization-title').keyup(function () {
         var name = slug($(this).val());
-        $('#brands-canonical_name').val(name);
-    });
-    $('#products-product_name').keyup(function () {
-        var name = slug($(this).val());
-        $('#products-canonical_name').val(name);
-        $('#products-meta_title').val($(this).val());
-        $('#products-meta_keyword').val($(this).val());
-        $('#products-meta_description').val($(this).val());
-    });
-    $('#productcategory-category').keyup(function () {
-        var name = slug($(this).val());
-        $('#productcategory-canonical_name').val(name);
-    });
-    $('#blogs-title').keyup(function () {
-        var name = slug($(this).val());
-        $('#blogs-canonical_name').val(name);
-        $('#blogs-meta_description').val($(this).val());
-        $('#blogs-meta_keyword').val($(this).val());
-        $('#blogs-meta_title').val($(this).val());
+        $('#panoramavisualization-canonical_name').val(name);
+        $('#panoramavisualization-meta_title').val($(this).val());
+        $('#panoramavisualization-meta_keyword').val($(this).val());
+        $('#panoramavisualization-meta_description').val($(this).val());
     });
     $('.gal-img-remove').click(function (e) {
         e.preventDefault();
@@ -35,7 +17,7 @@ $(document).ready(function () {
                 type: 'POST',
                 cache: false,
                 data: {id: id, file: file},
-                url: homeUrl + "cms/products/remove-gallery",
+                url: homeUrl + "cms/panorama-visualization/remove-gallery",
                 success: function (data) {
                     $("#gallerybox-" + div_id).remove();
                 }

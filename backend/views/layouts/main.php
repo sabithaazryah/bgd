@@ -110,32 +110,23 @@ $controler = Yii::$app->controller->id;
                             </ul>
                         </li>
                         <li class="<?= $controler == 'about' ? 'active' : '' ?>">
-                            <?= Html::a('<i class="fa fa-flag"></i> About', ['/cms/about/update'], ['class' => 'title']) ?>
+                            <?= Html::a('<i class="fa fa-flag"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
-                        <li class="treeview <?= $controler == 'brands' || $controler == 'product-category' || $controler == 'products' ? 'active' : '' ?>">
+                        <li class="treeview <?= $controler == 'panorama-visualization' || $controler == 'animation-design' ? 'active' : '' ?>">
                             <a href="">
                                 <i class="fa fa-product-hunt"></i>
-                                <span>Products</span>
+                                <span>3D Visualization</span>
                                 <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                             </a>
                             <ul class="treeview-menu">
                                 <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Brands', ['/cms/brands/index'], ['class' => 'title']) ?>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> 360° Panorama', ['/cms/panorama-visualization/index'], ['class' => 'title']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Animation Design', ['/cms/animation-design/index'], ['class' => 'title']) ?>
                                 </li>
 
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Categories', ['/cms/product-category/index'], ['class' => 'title']) ?>
-                                </li>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
-                                </li>
                             </ul>
-                        </li>
-                        <li class="<?= $controler == 'services' ? 'active' : '' ?>">
-                            <?= Html::a('<i class="fa fa-list"></i> Services', ['/cms/services/index'], ['class' => 'title']) ?>
-                        </li>
-                        <li class="<?= $controler == 'blogs' ? 'active' : '' ?>">
-                            <?= Html::a('<i class="fa fa-gg"></i> Blogs', ['/cms/blogs/index'], ['class' => 'title']) ?>
                         </li>
                         <li class="<?= $controler == 'contacts-info' ? 'active' : '' ?>">
                             <?= Html::a('<i class="fa fa-address-card"></i> Contact Info', ['/cms/contacts-info/update'], ['class' => 'title']) ?>

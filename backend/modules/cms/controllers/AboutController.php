@@ -8,6 +8,7 @@ use common\models\AboutSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * AboutController implements the CRUD actions for About model.
@@ -87,14 +88,34 @@ class AboutController extends Controller {
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate() {
-        $model = $this->findModel(1);
-        if ($model->load(Yii::$app->request->post()) && Yii::$app->SetValues->Attributes($model) && $model->validate() && $model->save()) {
-            Yii::$app->session->setFlash('success', "About content updated successfully");
-            return $this->redirect('update');
+    public function actionUpdate($id) {
+        $model = $this->findModel($id);
+        $model_ = $this->findModel($id);
+        if ($model->load(Yii::$app->request->post()) && Yii::$app->SetValues->Attributes($model)) {
+            $section1_image = UploadedFile::getInstance($model, 'section1_image');
+            $section4_image = UploadedFile::getInstance($model, 'section4_image');
+            $model->section1_image = !empty($section1_image) ? $section1_image->extension : $model_->section1_image;
+            $model->section4_image = !empty($section4_image) ? $section4_image->extension : $model_->section4_image;
+            if ($model->save()) {
+                $this->Upload($section1_image, $section4_image);
+                Yii::$app->session->setFlash('success', "About content updated successfully");
+            }
         } return $this->render('update', [
                     'model' => $model,
         ]);
+    }
+
+    public function Upload($section1_image, $section4_image) {
+        $paths = Yii::$app->basePath . '/../images/about';
+        if (!empty($section1_image)) {
+            $name = 'section1_image.' . $section1_image->extension;
+            $section1_image->saveAs($paths . '/' . $name);
+        }
+        if (!empty($section4_image)) {
+            $name = 'section4_image.' . $section4_image->extension;
+            $section4_image->saveAs($paths . '/' . $name);
+        }
+        return true;
     }
 
     /**

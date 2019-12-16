@@ -18,8 +18,8 @@ class AboutSearch extends About
     public function rules()
     {
         return [
-            [['id', 'status', 'CB', 'UB'], 'integer'],
-            [['section1_title1', 'section1_title2', 'section1_description1', 'section1_description2', 'section2_title', 'mission', 'vision', 'who_we_are', 'what_we_do', 'our_approach', 'DOC', 'DOU'], 'safe'],
+            [['id', 'section3_value1', 'section3_value2', 'section3_value3', 'section3_value4', 'status', 'CB', 'UB'], 'integer'],
+            [['section1_title1', 'section1_title2', 'section1_description2', 'section1_image', 'section2_description', 'section3_label1', 'section3_label2', 'section3_label3', 'section3_label4', 'section4_image', 'section4_description', 'DOC', 'DOU'], 'safe'],
         ];
     }
 
@@ -60,6 +60,10 @@ class AboutSearch extends About
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'section3_value1' => $this->section3_value1,
+            'section3_value2' => $this->section3_value2,
+            'section3_value3' => $this->section3_value3,
+            'section3_value4' => $this->section3_value4,
             'status' => $this->status,
             'CB' => $this->CB,
             'UB' => $this->UB,
@@ -69,14 +73,15 @@ class AboutSearch extends About
 
         $query->andFilterWhere(['like', 'section1_title1', $this->section1_title1])
             ->andFilterWhere(['like', 'section1_title2', $this->section1_title2])
-            ->andFilterWhere(['like', 'section1_description1', $this->section1_description1])
             ->andFilterWhere(['like', 'section1_description2', $this->section1_description2])
-            ->andFilterWhere(['like', 'section2_title', $this->section2_title])
-            ->andFilterWhere(['like', 'mission', $this->mission])
-            ->andFilterWhere(['like', 'vision', $this->vision])
-            ->andFilterWhere(['like', 'who_we_are', $this->who_we_are])
-            ->andFilterWhere(['like', 'what_we_do', $this->what_we_do])
-            ->andFilterWhere(['like', 'our_approach', $this->our_approach]);
+            ->andFilterWhere(['like', 'section1_image', $this->section1_image])
+            ->andFilterWhere(['like', 'section2_description', $this->section2_description])
+            ->andFilterWhere(['like', 'section3_label1', $this->section3_label1])
+            ->andFilterWhere(['like', 'section3_label2', $this->section3_label2])
+            ->andFilterWhere(['like', 'section3_label3', $this->section3_label3])
+            ->andFilterWhere(['like', 'section3_label4', $this->section3_label4])
+            ->andFilterWhere(['like', 'section4_image', $this->section4_image])
+            ->andFilterWhere(['like', 'section4_description', $this->section4_description]);
 
         return $dataProvider;
     }

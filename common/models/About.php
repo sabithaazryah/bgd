@@ -10,14 +10,19 @@ use Yii;
  * @property int $id
  * @property string $section1_title1
  * @property string $section1_title2
- * @property string $section1_description1
  * @property string $section1_description2
- * @property string $section2_title
- * @property string $mission
- * @property string $vision
- * @property string $who_we_are
- * @property string $what_we_do
- * @property string $our_approach
+ * @property string $section1_image
+ * @property string $section2_description
+ * @property int $section3_value1
+ * @property string $section3_label1
+ * @property int $section3_value2
+ * @property string $section3_label2
+ * @property int $section3_value3
+ * @property string $section3_label3
+ * @property int $section3_value4
+ * @property string $section3_label4
+ * @property string $section4_image
+ * @property string $section4_description
  * @property int $status
  * @property int $CB
  * @property int $UB
@@ -38,11 +43,13 @@ class About extends \yii\db\ActiveRecord {
      */
     public function rules() {
         return [
-            [['section1_title1', 'section1_title2', 'section1_description1', 'section1_description2', 'section2_title', 'mission', 'vision', 'who_we_are', 'what_we_do', 'our_approach'], 'required'],
-            [['section1_description1', 'section1_description2', 'mission', 'vision', 'who_we_are', 'what_we_do', 'our_approach'], 'string'],
-            [['status', 'CB', 'UB'], 'integer'],
+            [['section1_description2', 'section2_description', 'section3_value1', 'section3_label1', 'section3_value2', 'section3_label2', 'section3_value3', 'section3_label3', 'section3_value4', 'section3_label4', 'section4_description'], 'required'],
+            [['section1_description2', 'section2_description', 'section4_description'], 'string'],
+            [['section3_value1', 'section3_value2', 'section3_value3', 'section3_value4', 'status', 'CB', 'UB'], 'integer'],
             [['DOC', 'DOU'], 'safe'],
-            [['section1_title1', 'section1_title2', 'section2_title'], 'string', 'max' => 255],
+            [['section1_title1', 'section1_title2'], 'string', 'max' => 255],
+            [['section1_image', 'section4_image'], 'file', 'extensions' => 'jpg, png, jpeg, webp'],
+            [['section3_label1', 'section3_label2', 'section3_label3', 'section3_label4'], 'string', 'max' => 100],
         ];
     }
 
@@ -54,14 +61,19 @@ class About extends \yii\db\ActiveRecord {
             'id' => 'ID',
             'section1_title1' => 'Section1 Title1',
             'section1_title2' => 'Section1 Title2',
-            'section1_description1' => 'Section1 Description1',
             'section1_description2' => 'Section1 Description2',
-            'section2_title' => 'Section2 Services',
-            'mission' => 'Mission',
-            'vision' => 'Vision',
-            'who_we_are' => 'Who We Are',
-            'what_we_do' => 'What We Do',
-            'our_approach' => 'Our Approach',
+            'section1_image' => 'Section1 Image',
+            'section2_description' => 'Section2 Description',
+            'section3_value1' => 'Section3 Value1',
+            'section3_label1' => 'Section3 Label1',
+            'section3_value2' => 'Section3 Value2',
+            'section3_label2' => 'Section3 Label2',
+            'section3_value3' => 'Section3 Value3',
+            'section3_label3' => 'Section3 Label3',
+            'section3_value4' => 'Section3 Value4',
+            'section3_label4' => 'Section3 Label4',
+            'section4_image' => 'Section4 Image',
+            'section4_description' => 'Section4 Description',
             'status' => 'Status',
             'CB' => 'C B',
             'UB' => 'U B',

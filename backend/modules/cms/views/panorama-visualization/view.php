@@ -4,10 +4,10 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\About */
+/* @var $model common\models\PanoramaVisualization */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Abouts', 'url' => ['index']];
+$this->title = $model->title;
+$this->params['breadcrumbs'][] = ['label' => 'Panorama Visualizations', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
@@ -21,9 +21,9 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
 
-                <div class="panel-body"><div class="about-view">
+                <div class="panel-body"><div class="panorama-visualization-view">
                         <p>
-                            <?=  Html::a('<i class="fa fa-list"></i><span> Manage About</span>', ['index'], ['class' => 'btn btn-warning  btn-icon btn-icon-standalone']) ?>
+                            <?=  Html::a('<i class="fa fa-list"></i><span> Manage Panorama Visualization</span>', ['index'], ['class' => 'btn btn-warning  btn-icon btn-icon-standalone']) ?>
                             <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
                             <?= Html::a('Delete', ['delete', 'id' => $model->id], [
                             'class' => 'btn btn-danger',
@@ -38,21 +38,16 @@ $this->params['breadcrumbs'][] = $this->title;
                         'model' => $model,
                         'attributes' => [
                                     'id',
-            'section1_title1',
-            'section1_title2',
-            'section1_description2:ntext',
-            'section1_image',
-            'section2_description:ntext',
-            'section3_value1',
-            'section3_label1',
-            'section3_value2',
-            'section3_label2',
-            'section3_value3',
-            'section3_label3',
-            'section3_value4',
-            'section3_label4',
-            'section4_image',
-            'section4_description:ntext',
+            'title',
+            'canonical_name',
+            'description:ntext',
+            'image',
+            'location',
+            'scope',
+            'facebook_link',
+            'twitter_link',
+            'linkedin_link',
+            'instegram_link',
             'status',
             'CB',
             'UB',

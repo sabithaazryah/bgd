@@ -13,6 +13,9 @@ use kartik\file\FileInput;
 
     <?php $form = ActiveForm::begin(); ?>
     <div class="row">
+        <div class='col-md-12 col-sm-12 col-xs-12 left_padd'>
+            <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+        </div>
         <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
             <?php
             echo $form->field($model, 'image')->widget(FileInput::classname(), [
@@ -25,8 +28,13 @@ use kartik\file\FileInput;
                     'previewFileType' => 'image',
                     'showUpload' => false,
                 ]
-            ])->hint('Dimensions : 1920*550');
+            ])->hint('Dimensions : 1920*935');
             ?>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
+            <?= $form->field($model, 'status')->dropDownList(['1' => 'Enabled', '0' => 'Disabled']) ?>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
             <?php
             if ($model->image != '' && $model->id != "") {
                 $image = explode(',', $model->image);
@@ -38,9 +46,6 @@ use kartik\file\FileInput;
                 <br>
             <?php }
             ?>
-        </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
-            <?= $form->field($model, 'status')->dropDownList(['1' => 'Enabled', '0' => 'Disabled']) ?>
         </div>
     </div>
     <div class="row">

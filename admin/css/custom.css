@@ -342,7 +342,7 @@ and open the template in the editor.
     border: 2px solid #d2d2d2;
 }
 .img-box .news-img img{
-    width: 80px;
+    /*width: 80px;*/
     margin: 0 auto;
 }
 .form-group.has-error .help-block {
@@ -369,7 +369,4 @@ and open the template in the editor.
 .btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover{
     background-color: #9dc029;
     border-color: #9dc029;
-}
-.form-control{
-    padding: 22px 12px;
 }

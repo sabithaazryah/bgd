@@ -21,21 +21,31 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'section1_title2') ?>
 
-    <?= $form->field($model, 'section1_description1') ?>
-
     <?= $form->field($model, 'section1_description2') ?>
 
-    <?php // echo $form->field($model, 'section2_title') ?>
+    <?= $form->field($model, 'section1_image') ?>
 
-    <?php // echo $form->field($model, 'mission') ?>
+    <?php // echo $form->field($model, 'section2_description') ?>
 
-    <?php // echo $form->field($model, 'vision') ?>
+    <?php // echo $form->field($model, 'section3_value1') ?>
 
-    <?php // echo $form->field($model, 'who_we_are') ?>
+    <?php // echo $form->field($model, 'section3_label1') ?>
 
-    <?php // echo $form->field($model, 'what_we_do') ?>
+    <?php // echo $form->field($model, 'section3_value2') ?>
 
-    <?php // echo $form->field($model, 'our_approach') ?>
+    <?php // echo $form->field($model, 'section3_label2') ?>
+
+    <?php // echo $form->field($model, 'section3_value3') ?>
+
+    <?php // echo $form->field($model, 'section3_label3') ?>
+
+    <?php // echo $form->field($model, 'section3_value4') ?>
+
+    <?php // echo $form->field($model, 'section3_label4') ?>
+
+    <?php // echo $form->field($model, 'section4_image') ?>
+
+    <?php // echo $form->field($model, 'section4_description') ?>
 
     <?php // echo $form->field($model, 'status') ?>
 

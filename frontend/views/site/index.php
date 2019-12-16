@@ -454,29 +454,30 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
                     <div class="float_title rit">
                         Quick Contact
                     </div>
-                    <form class="qck_cntct" action="" method="post">
+                    <form class="qck_cntct contact-enquiry" action="" method="post">
                         <div class="title">
                             Quick Contact
                         </div>
                         <div class="row">
                             <div class="col-12 pad0">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" required="" placeholder="Name">
+                                    <input type="text" name="name" class="form-control" required="" placeholder="Name" id="name">
                                 </div>
                             </div>
                             <div class="col-12 pad0">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" required="" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" required="" placeholder="Email" id="email">
                                 </div>
                             </div>
                             <div class="col-12 pad0">
                                 <div class="form-group bord">
-                                    <input type="phone" name="phone" class="form-control" required="" placeholder="Phone No">
+                                    <input type="phone" name="phone" class="form-control" required="" placeholder="Phone No" id="phone">
+                                    <!--<input type="hidden" name="company" class="form-control" required=""  id="company">-->
                                 </div>
                             </div>
                             <div class="col-12 pad0">
                                 <div class="form-group">
-                                    <textarea class="form-control" required="" placeholder="Message" rows="1"></textarea>
+                                    <textarea class="form-control" required="" placeholder="Message" rows="1" id="message" name="message"></textarea>
                                 </div>
                             </div>
                             <div class="col-12 pad0">

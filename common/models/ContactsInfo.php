@@ -18,36 +18,32 @@ use Yii;
  * @property string $DOC
  * @property string $DOU
  */
-class ContactsInfo extends \yii\db\ActiveRecord
-{
+class ContactsInfo extends \yii\db\ActiveRecord {
+
     /**
      * {@inheritdoc}
      */
-    public static function tableName()
-    {
+    public static function tableName() {
         return 'contacts_info';
     }
 
     /**
      * {@inheritdoc}
      */
-    public function rules()
-    {
+    public function rules() {
         return [
             [['address', 'email'], 'required'],
             [['address', 'map_link'], 'string'],
             [['status', 'CB', 'UB'], 'integer'],
-            [['DOC', 'DOU'], 'safe'],
+            [['DOC', 'DOU', 'working_time', 'phone'], 'safe'],
             [['email'], 'string', 'max' => 255],
-            [['phone'], 'string', 'max' => 25],
         ];
     }
 
     /**
      * {@inheritdoc}
      */
-    public function attributeLabels()
-    {
+    public function attributeLabels() {
         return [
             'id' => 'ID',
             'address' => 'Address',
@@ -61,4 +57,5 @@ class ContactsInfo extends \yii\db\ActiveRecord
             'DOU' => 'D O U',
         ];
     }
+
 }

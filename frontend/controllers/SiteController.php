@@ -111,7 +111,11 @@ class SiteController extends Controller {
     }
 
     public function actionPortfolio() {
+        $category = \common\models\PortfolioCategory::find()->where(['status' => 1])->all();
+        $portfolio = \common\models\Portfolio::find()->where(['status' => 1])->all();
         return $this->render('portfolio', [
+                    'category' => $category,
+                    'portfolio' => $portfolio,
         ]);
     }
 
@@ -135,6 +139,8 @@ class SiteController extends Controller {
             $model->name = $_POST['name'];
             $model->email = $_POST['email'];
             $model->phone = $_POST['phone'];
+            if (isset($_POST['company']) && $_POST['company'] != '')
+                $model->company = $_POST['company'];
             $model->message = $_POST['message'];
             $model->date = date('Y-m-d');
             if ($model->save()) {

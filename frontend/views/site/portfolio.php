@@ -24,112 +24,33 @@
                 <i class="flaticon-instagram-logo"></i>
                 <ul>
                     <li><a href="#" data-filter="*" class="current">All</a></li>
-                    <li><a href="#" data-filter=".Architecture">Architecture</a></li>
-                    <li><a href="#" data-filter=".Interior">Interior</a></li>
-                    <li><a href="#" data-filter=".Landscape">Landscape</a></li>
+                    <?php foreach ($category as $categorys) { ?>
+                        <li><a href="#" data-filter=".<?= $categorys->id ?>"><?= $categorys->category ?></a></li>
+                    <?php } ?>
                 </ul>
-
             </div>
         </div>
+
         <div class="portfoliosec">
             <div class="container">
                 <div class="portfolioContainer row">
-                    <div class="col-md-4 col-sm-6 Architecture">
-                        <div class="box">
-                            <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                                <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                            </a>
-                            <div class="info_box">
-                                <div class="pro_name">
-                                    Nad AL Shiba Villa
+                    <?php foreach ($portfolio as $portfolios) { ?>
+                        <div class="col-md-4 col-sm-6 <?= $portfolios->category ?>">
+                            <div class="box">
+                                <a href="<?= Yii::$app->homeUrl ?>images/portfolio/portfolio<?= $portfolios->id ?>.<?= $portfolios->image ?>" class="img_box" data-fancybox="gallery" tabindex="0">
+                                    <img src="<?= Yii::$app->homeUrl ?>images/portfolio/portfolio<?= $portfolios->id ?>.<?= $portfolios->image ?>" class="img-fluid" alt="">
+                                </a>
+                                <div class="info_box">
+                                    <div class="pro_name">
+                                        <?= $portfolios->name ?>
+                                    </div>
+                                    <ul class="pro_cat">
+                                        <li> <?= $portfolios->description ?></li>
+                                    </ul>
                                 </div>
-                                <ul class="pro_cat">
-                                    <li>interior</li>
-                                    <li>Living Room</li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 Interior">
-                        <div class="box">
-                            <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                                <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                            </a>
-                            <div class="info_box">
-                                <div class="pro_name">
-                                    Nad AL Shiba Villa
-                                </div>
-                                <ul class="pro_cat">
-                                    <li>interior</li>
-                                    <li>Living Room</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 Landscape">
-                        <div class="box">
-                            <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                                <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                            </a>
-                            <div class="info_box">
-                                <div class="pro_name">
-                                    Nad AL Shiba Villa
-                                </div>
-                                <ul class="pro_cat">
-                                    <li>interior</li>
-                                    <li>Living Room</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 Architecture">
-                        <div class="box">
-                            <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                                <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                            </a>
-                            <div class="info_box">
-                                <div class="pro_name">
-                                    Nad AL Shiba Villa
-                                </div>
-                                <ul class="pro_cat">
-                                    <li>interior</li>
-                                    <li>Living Room</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 Interior">
-                        <div class="box">
-                            <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                                <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                            </a>
-                            <div class="info_box">
-                                <div class="pro_name">
-                                    Nad AL Shiba Villa
-                                </div>
-                                <ul class="pro_cat">
-                                    <li>interior</li>
-                                    <li>Living Room</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 Landscape">
-                        <div class="box">
-                            <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                                <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                            </a>
-                            <div class="info_box">
-                                <div class="pro_name">
-                                    Nad AL Shiba Villa
-                                </div>
-                                <ul class="pro_cat">
-                                    <li>interior</li>
-                                    <li>Living Room</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>

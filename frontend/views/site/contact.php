@@ -38,10 +38,7 @@
                                 Location
                             </div>
                             <ul>
-                                <li>
-                                    Smart Heights , Tecom ,<br />
-                                    Dubai, Office 2108
-                                </li>
+                                <?= $contact_info->address ?>
                             </ul>
                         </div>
                     </div>
@@ -54,8 +51,7 @@
                                 Phone No
                             </div>
                             <ul>
-                                <li><a href="tel:+971559643550">+971 55 964 3550</a></li>
-                                <li><a href="tel:+97143618119">+971 4 361 8119</a></li>
+                                <?= $contact_info->phone ?>
                             </ul>
                         </div>
                     </div>
@@ -68,7 +64,7 @@
                                 E-mail address:
                             </div>
                             <ul>
-                                <li><a href="mailto:info@bgdinterior.com">info@bgdinterior.com</a></li>
+                                <?= $contact_info->email ?>
                             </ul>
                         </div>
                     </div>
@@ -81,8 +77,7 @@
                                 Working Time
                             </div>
                             <ul>
-                                <li>Sat-Thu 09:00am to 06:00pm</li>
-                                <li>Friday: Closed</li>
+                                <?= $contact_info->working_time ?>
                             </ul>
                         </div>
                     </div>
@@ -98,33 +93,33 @@
         <div class="row form_row">
             <div class="col-lg-12 form_bg">
                 <div class="container">
-                    <form id="contact-form" action="" method="post">
+                    <form id="contact-form" action="" method="post" class="contact-enquiry">
                         <div class="form_title">Fill in the Form</div>.
                         <div class="form_info">Thank you for your early interest in our interior design services, please feel free to reach us using any of the contact information listed below or simply fill the contact form below and we will get back to as soon as possible. </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" autocomplete="off" name="name" placeholder="Name" required="">
+                                    <input type="text" class="form-control" autocomplete="off" name="name" id="name" placeholder="Name" required="">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" autocomplete="off" name="email" placeholder="Email" required="">
+                                    <input type="email" class="form-control" autocomplete="off" name="email" id="email" placeholder="Email" required="">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="phone" class="form-control" autocomplete="off" name="phone" placeholder="Phone" required="">
+                                    <input type="phone" class="form-control" autocomplete="off" name="phone" id="phone" placeholder="Phone" required="">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" autocomplete="off" name="company" placeholder="Company" required="">
+                                    <input type="text" class="form-control" autocomplete="off" name="company" id="company" placeholder="Company" required="">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" name="company" autocomplete="off" placeholder="Message" required="" ></textarea>
+                                    <textarea class="form-control" name="message" autocomplete="off" placeholder="Message" id="message" required="" ></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -140,7 +135,7 @@
     </section>
 
     <section id="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.65948924868!2d55.35169191067386!3d25.282037634466906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c8b79c776d5%3A0x4356ebc2db4417d2!2sDar+Al+Wuheida+Building+-+Al+Doha+St+-+Dubai+-+United+Arab+Emirates!5e0!3m2!1sen!2sin!4v1549979157614" width="100%" height="605" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="<?= $contact_info->map_link ?>" width="100%" height="605" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
 </div>

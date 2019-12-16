@@ -191,3 +191,31 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
     </body>
 </html>
 <?php $this->endPage() ?>
+<script>
+    $(document).ready(function () {
+        $(document).on('submit', '.contact-enquiry', function (e) {
+            e.preventDefault();
+            var str = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: '<?= Yii::$app->homeUrl; ?>site/contact-enquiry',
+                data: str,
+                success: function (data)
+                {
+                    if (data == 1) {
+                        $('.contact-enquiry').prepend('<div id="email-alert" style="color: #28a745;font-weight: 600;margin-bottom:10px;">Thank you for contacting us. We will get back to you as soon as possible.</div>');
+                    }
+                    $('#name').val("");
+                    $('#email').val("");
+                    $('#phone').val("");
+                    $('#company').val("");
+                    $('#message').val("");
+                    setTimeout(function () {
+                        $('#email-alert').remove();
+                    }, 3000);
+                }
+            });
+        });
+
+    });
+</script>

@@ -13,8 +13,13 @@ use dosamigos\ckeditor\CKEditor;
 
     <?php $form = ActiveForm::begin(); ?>
     <div class="row">
-        <div class='col-md-12 col-sm-12 col-xs-12 left_padd'>
-            <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
+        <div class='col-md-6 col-sm-12 col-xs-12 left_padd'>
+            <?=
+            $form->field($model, 'phone', ['options' => ['class' => 'form-group']])->widget(CKEditor::className(), [
+                'options' => ['rows' => 2],
+                'preset' => 'custom',
+            ])
+            ?>
         </div>
         <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
             <?=
@@ -27,6 +32,14 @@ use dosamigos\ckeditor\CKEditor;
         <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
             <?=
             $form->field($model, 'email', ['options' => ['class' => 'form-group']])->widget(CKEditor::className(), [
+                'options' => ['rows' => 2],
+                'preset' => 'custom',
+            ])
+            ?>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
+            <?=
+            $form->field($model, 'working_time', ['options' => ['class' => 'form-group']])->widget(CKEditor::className(), [
                 'options' => ['rows' => 2],
                 'preset' => 'custom',
             ])

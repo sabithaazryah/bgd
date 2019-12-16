@@ -128,6 +128,25 @@ $controler = Yii::$app->controller->id;
 
                             </ul>
                         </li>
+
+
+                        <li class="treeview <?= $controler == 'portfolio' || $controler == 'portfolio-category' ? 'active' : '' ?>">
+                            <a href="">
+                                <i class="fa fa-building"></i>
+                                <span>Portfolio</span>
+                                <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Category', ['/cms/portfolio-category/index'], ['class' => 'title']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Portfolio', ['/cms/portfolio/index'], ['class' => 'title']) ?>
+                                </li>
+
+                            </ul>
+                        </li>
+
                         <li class="<?= $controler == 'contacts-info' ? 'active' : '' ?>">
                             <?= Html::a('<i class="fa fa-address-card"></i> Contact Info', ['/cms/contacts-info/update'], ['class' => 'title']) ?>
                         </li>

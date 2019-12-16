@@ -163,7 +163,7 @@ $controler = Yii::$app->controller->id;
                 <div class="pull-right hidden-xs">
                     <b>Version</b> 2.4.0
                 </div>
-                <strong>Copyright &copy; <?= date('Y') ?> Binaca Trading.</strong> All Rights Reserved.
+                <strong>Copyright &copy; <?= date('Y') ?> BGD Interiors.</strong> All Rights Reserved.
             </footer>
             <div class="control-sidebar-bg"></div>
         </div>

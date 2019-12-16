@@ -39,9 +39,12 @@ and open the template in the editor.
     border-radius: 5px;
 }
 .login-page, .register-page {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background: #083b66;
+    -o-background-size: cover;
+    height: 100%;
 }
 .login-box, .register-box {
     width: 450px;
@@ -53,14 +56,14 @@ and open the template in the editor.
     width: 145px;
 }
 .login-box-body, .register-box-body {
-    background: #fff;
-    padding: 20px;
+    background: #a0a0a08f;
     border-top: 0;
-    color: #4a4a4a;
+    color: #fff;
+    padding: 30px 20px;
 }
 #login-form .form-control {
     border-radius: 3px;
-    padding: 6px 30px;
+    padding: 22px 30px;
 }
 .login_content .btn-default.submit {
     background-color: #a0274e;
@@ -79,9 +82,13 @@ and open the template in the editor.
     outline: none;
 }
 .login-box .has-feedback label~.form-control-feedback {
-    top: 25px;
+    top: 30px;
     left: 0px;
-    color: #9b0405;
+    color: #9dc028;
+}
+#login-form .form-group {
+    width: 100%;
+    margin-bottom: 20px !important;
 }
 #login-form .form-group.has-error .help-block {
     color: #a54a3f;
@@ -101,15 +108,15 @@ and open the template in the editor.
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: #083b66;
-    border-color: #083b66;
+    background-color: #41bfeb;
+    border-color: #41bfeb;
     outline: none;
     padding: 8px 12px;
     font-weight: 600;
 }
 #login-form .form-group .btn-primary:hover{
-    background-color: #9b0405;
-    border-color: #9b0405;
+    background-color: #41bfeb;
+    border-color: #41bfeb;
     outline: none;
 }
 .main-header .logo-lg img{
@@ -133,33 +140,33 @@ and open the template in the editor.
     margin: 0 auto;
 }
 .skin-blue .main-header .navbar {
-    background-color: #0e3b66;
+    background-color: #373b3f;
 }
 .skin-blue .main-header .logo {
-    background-color: #0e3b66;
+    background-color: #272931;
     color: #fff;
-    border-right: #0e3b66;
+    border-right: #272931;
 }
 .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
-    background-color: #083b66;
+    background-color: #373b3f;
 }
 .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a {
     color: #fff;
-    background: #0a2946;
+    background: #272931;
 }
 .skin-blue .sidebar-menu>li>.treeview-menu {
     margin: 0 1px;
-    background: #0a2946;
+    background: #272931;
 }
 .skin-blue .sidebar-menu>li.header {
     color: #4b646f;
     background: #279a9e;
 }
 .skin-blue .main-header .logo:hover {
-    background-color: #0e3b66;
+    background-color: #272931;
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-    background-color: #0e3b66;
+    background-color: #373b3f;
     color: #fff;
 }
 .skin-blue .sidebar-menu .treeview-menu>li>a {
@@ -174,7 +181,7 @@ and open the template in the editor.
 }
 .signout-btn {
     padding: 13px 18px;
-    background: #0e3b66;
+    background: #373b3f;
     border: none;
     color: #fff;
     font-weight: 600;
@@ -299,21 +306,21 @@ and open the template in the editor.
     font-weight: 600;
 }
 .skin-blue .sidebar-menu>li.active>a {
-    border-left-color: #970000;
+    border-left-color: #86a423;
 }
 .btn-info {
-    background-color: #970000;
-    border-color: #970000;
+    background-color: #41bfeb;
+    border-color: #41bfeb;
     outline: none;
 }
 .btn-info:hover, .btn-info:active, .btn-info.hover {
-    background-color: #970000;
-    border-color: #970000;
+    background-color: #41bfeb;
+    border-color: #41bfeb;
     outline: none;
 }
 .btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover, .open>.dropdown-toggle.btn-info.focus, .open>.dropdown-toggle.btn-info:focus, .open>.dropdown-toggle.btn-info:hover{
-    background-color: #970000;
-    border-color: #970000;
+    background-color: #41bfeb;
+    border-color: #41bfeb;
 }
 .download-brochure{
     font-weight: 600;
@@ -347,16 +354,22 @@ and open the template in the editor.
     display: none;
 }
 .btn-success {
-    background-color: #083b66;
-    border-color: #083b66;
+    background-color: #9dc029;
+    border-color: #9dc029;
     outline: none;
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .btn-success:hover, .btn-success:active, .btn-success.hover {
-    background-color: #083b66;
-    border-color: #083b66;
+    background-color: #9dc029;
+    border-color: #9dc029;
     outline: none;
 }
 .btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover{
-    background-color: #083b66;
-    border-color: #083b66;
+    background-color: #9dc029;
+    border-color: #9dc029;
+}
+.form-control{
+    padding: 22px 12px;
 }

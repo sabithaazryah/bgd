@@ -1,0 +1,481 @@
+[28-Mar-2019 08:42:45 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf-backend=7bb21cf36c6210a09740195ade8cc7dd543be2ce857cebd15ec042452eab18b8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222uCjq9xUgl4Y8EPdlUhj2LXPTqazTpO1%22%3B%7D;',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XJyJBaIfnJx2A4VUkJXtVwAAAC0',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XJyJBaIfnJx2A4VUkJXtVwAAAC0',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '52083',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1553762565.173862934112548828125,
+    'REQUEST_TIME' => 1553762565,
+]
+[29-Mar-2019 18:24:34 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XJ5i3LMReqPemkiHbvPFgAAAAo0',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XJ5i3LMReqPemkiHbvPFgAAAAo0',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '39523',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1553883869.5889260768890380859375,
+    'REQUEST_TIME' => 1553883869,
+]
+[30-Mar-2019 22:32:16 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XJ-uZTKriREXmlwenL4vAQAAAD4',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XJ-uZTKriREXmlwenL4vAQAAAD4',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '57866',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1553985133.0976779460906982421875,
+    'REQUEST_TIME' => 1553985133,
+]
+[01-Apr-2019 01:21:37 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XKFnn-DKGuW1D7QIJDU@0AAAADQ',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XKFnn-DKGuW1D7QIJDU@0AAAADQ',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '35424',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1554081696.02468204498291015625,
+    'REQUEST_TIME' => 1554081696,
+]
+[02-Apr-2019 06:46:52 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XKMFXAamceBILRejnxx9ywAAASY',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XKMFXAamceBILRejnxx9ywAAASY',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '34863',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1554187612.06824398040771484375,
+    'REQUEST_TIME' => 1554187612,
+]
+[03-Apr-2019 10:20:52 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XKSJAytqhBeoM90N6UbEPAAAAAQ',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XKSJAytqhBeoM90N6UbEPAAAAAQ',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '48933',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1554286851.9500110149383544921875,
+    'REQUEST_TIME' => 1554286851,
+]
+[05-Apr-2019 08:13:13 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XKcOGDCnvLP-CPVlMQFRBwAAAX4',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XKcOGDCnvLP-CPVlMQFRBwAAAX4',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (cPanel) OpenSSL/1.0.2q mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '55370',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1554451992.1716229915618896484375,
+    'REQUEST_TIME' => 1554451992,
+]
+[06-Apr-2019 11:26:23 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The HTTP status code is invalid: 2000' in /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php:285
+Stack trace:
+#0 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Response.php(306): yii\web\Response->setStatusCode(2000)
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/ErrorHandler.php(103): yii\web\Response->setStatusCodeByException(Object(yii\web\HttpException))
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/coral3rq/public_html/astropack/backend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('home', Array)
+#4 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/home', Array)
+#5 /home/coral3rq/public_html/astropack/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coral3rq/public_html/astropack/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_HOST' => 'coralepitome.com',
+    'HTTP_USER_AGENT' => 'ia_archiver',
+    'HTTP_X_FORWARDED_FOR' => '192.185.129.71',
+    'HTTP_FROM' => 'crawler@alexa.com',
+    'REDIRECT_UNIQUE_ID' => 'XKiM3lxEop3dlHctmJkHwQAAAXw',
+    'REDIRECT_no-gzip' => '1',
+    'REDIRECT_dont-vary' => '1',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'XKiM3lxEop3dlHctmJkHwQAAAXw',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'coralepitome.com',
+    'SERVER_ADDR' => '192.185.129.71',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '54.173.35.129',
+    'DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coral3rq/public_html',
+    'SERVER_ADMIN' => 'webmaster@coralepitome.com',
+    'SCRIPT_FILENAME' => '/home/coral3rq/public_html/astropack/admin/index.php',
+    'REMOTE_PORT' => '38690',
+    'REDIRECT_URL' => '/astropack/admin/site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'SERVER_PROTOCOL' => 'HTTP/1.0',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'site/home',
+    'REQUEST_URI' => '/astropack/admin/site/home',
+    'SCRIPT_NAME' => '/astropack/admin/index.php',
+    'PHP_SELF' => '/astropack/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1554549982.596643924713134765625,
+    'REQUEST_TIME' => 1554549982,
+]

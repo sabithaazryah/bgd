@@ -1,0 +1,167 @@
+[24-Apr-2019 11:50:35 Etc/GMT] An Error occurred while handling another error:
+PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', 'mysql', NULL)
+#1 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->prepare(true)
+#6 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('contacts_info')
+#10 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('contacts_info', 'schema', false)
+#11 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('contacts_info')
+#12 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(408): yii\db\ActiveRecord::getTableSchema()
+#13 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(178): yii\db\ActiveRecord::primaryKey()
+#14 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(1)
+#15 /home/astropackgulf/public_html/frontend/views/layouts/main.php(10): yii\db\BaseActiveRecord::findOne(1)
+#16 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/View.php(348): require('/home/astropack...')
+#17 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/astropack...', Array)
+#18 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/astropack...', Array, Object(frontend\controllers\SiteController))
+#19 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#20 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#21 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#27 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->prepare(true)
+#4 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('contacts_info')
+#8 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('contacts_info', 'schema', false)
+#9 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('contacts_info')
+#10 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(408): yii\db\ActiveRecord::getTableSchema()
+#11 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveRecord.php(178): yii\db\ActiveRecord::primaryKey()
+#12 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(1)
+#13 /home/astropackgulf/public_html/frontend/views/layouts/main.php(10): yii\db\BaseActiveRecord::findOne(1)
+#14 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/View.php(348): require('/home/astropack...')
+#15 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/astropack...', Array)
+#16 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(399): yii\base\View->renderFile('/home/astropack...', Array, Object(frontend\controllers\SiteController))
+#17 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#18 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#19 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#20 [internal function]: yii\web\ErrorAction->run()
+#21 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#22 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#23 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#24 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(108): yii\base\Module->runAction('site/error')
+#25 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#26 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#27 {main}
+Additional Information:
+
+Previous exception:
+PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', 'mysql', NULL)
+#1 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->prepare(true)
+#6 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#7 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#8 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(292): yii\db\Query->one(NULL)
+#9 /home/astropackgulf/public_html/frontend/controllers/SiteController.php(73): yii\db\ActiveQuery->one()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex()
+#11 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#15 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/astropackgulf/public_html/index.php(15): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(1159): yii\db\Command->prepare(true)
+#4 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Command.php(413): yii\db\Command->queryInternal('fetch', NULL)
+#5 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/Query.php(274): yii\db\Command->queryOne()
+#6 /home/astropackgulf/public_html/vendor/yiisoft/yii2/db/ActiveQuery.php(292): yii\db\Query->one(NULL)
+#7 /home/astropackgulf/public_html/frontend/controllers/SiteController.php(73): yii\db\ActiveQuery->one()
+#8 [internal function]: frontend\controllers\SiteController->actionIndex()
+#9 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#12 /home/astropackgulf/public_html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#13 /home/astropackgulf/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /home/astropackgulf/public_html/index.php(15): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+$_SERVER = [
+    'LSPHP_ENABLE_USER_INI' => 'on',
+    'PATH' => '/usr/local/bin:/usr/bin:/bin',
+    'TEMP' => '/tmp',
+    'TMP' => '/tmp',
+    'TMPDIR' => '/tmp',
+    'PWD' => '/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CONNECTION' => 'close',
+    'CONTENT_LENGTH' => '0',
+    'HTTP_COOKIE' => '_csrf-frontend=3177ca5c69accce9455e97a71804de392f865442db14ebe221bae4b483e8379ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Y9JX25vELsxR-edJwNO-XJVHKBpshhlR%22%3B%7D; _ga=GA1.2.1798771655.1556105991; _gid=GA1.2.664978559.1556105991; wh-widget-cookie=1; __tawkuuid=e::astropackgulf.com::oh5X0zoSUMfkL6mSylxRoxG+P5jJm+lBN8wJCxB83Ob804tAF+8/iXTApF5/qGja::2; TawkConnectionTime=0; timezone=Asia/Kolkata; cpsession=astropackgulf%3aMuTKQovmD19xs1dZ%2c15f5f0f027e5500ccf9fc6b1bad599f7',
+    'HTTP_HOST' => 'www.astropackgulf.com',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '199.79.62.18',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_DNT' => '1',
+    'UNIQUE_ID' => 'XMBNioPFq-QHCUtsgEAyDwAAADU',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'SERVER_NAME' => 'www.astropackgulf.com',
+    'SERVER_ADDR' => '199.79.62.18',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '122.164.100.146',
+    'DOCUMENT_ROOT' => '/home/astropackgulf/public_html',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/astropackgulf/public_html',
+    'SERVER_ADMIN' => 'webmaster@astropackgulf.com',
+    'SCRIPT_FILENAME' => '/home/astropackgulf/public_html/index.php',
+    'REMOTE_PORT' => '44792',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/',
+    'SCRIPT_NAME' => '/index.php',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1556106634.944941043853759765625,
+    'REQUEST_TIME' => 1556106634,
+]
+[30-Apr-2019 11:11:33 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:33 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:33 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/astropackgulf/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:37 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:37 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:37 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/astropackgulf/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:42 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:42 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:42 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/astropackgulf/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:44 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:44 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:44 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/astropackgulf/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:52 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:52 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:52 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/astropackgulf/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:56 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:56 Etc/GMT] PHP Warning:  require(/home/astropackgulf/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/astropackgulf/public_html/index.php on line 9
+[30-Apr-2019 11:11:56 Etc/GMT] PHP Fatal error:  require(): Failed opening required '/home/astropackgulf/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/astropackgulf/public_html/index.php on line 9

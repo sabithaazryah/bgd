@@ -1,0 +1,55 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 09/12/2019 07:35
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"], [class*=" flaticon-"],
+[class^="flaticon-"], [class*=" flaticon-"] {
+        font-size: 20px;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+font-style: normal;
+margin-left: 0px;
+}
+
+.flaticon-phone-call:before { content: "\f100"; }
+.flaticon-envelope:before { content: "\f101"; }
+.flaticon-whatsapp:before { content: "\f102"; }
+.flaticon-like:before { content: "\f103"; }
+.flaticon-team:before { content: "\f104"; }
+.flaticon-team-1:before { content: "\f105"; }
+.flaticon-technical-support:before { content: "\f106"; }
+.flaticon-target:before { content: "\f107"; }
+.flaticon-multimedia:before { content: "\f108"; }
+.flaticon-instagram-logo:before { content: "\f109"; }
+.flaticon-meeting:before { content: "\f10a"; }
+.flaticon-project-management:before { content: "\f10b"; }
+.flaticon-pen:before { content: "\f10c"; }
+.flaticon-place:before { content: "\f10d"; }
+.flaticon-clock:before { content: "\f10e"; }
+.flaticon-sketch:before { content: "\f10f"; }
+.flaticon-maintenance:before { content: "\f110"; }
+.flaticon-design:before { content: "\f111"; }
+.flaticon-external-link:before { content: "\f112"; }

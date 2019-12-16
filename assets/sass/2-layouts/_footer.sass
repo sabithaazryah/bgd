@@ -1,0 +1,85 @@
+//FOOTER_LAYOUT
+
+/************************FOOTER*****************************/
+footer
+  padding: 65px 0 0
+  .foot_head
+    font-size: 16px
+    color: rgb(255, 255, 255)
+    padding-bottom: 23px
+    margin-bottom: 45px
+    position: relative
+    @media only screen and (max-width: 768px)
+      margin-bottom: 25px
+    &::after
+      content: ""
+      background-color: rgb(65, 191, 235)
+      width: 25px
+      height: 1px
+      position: absolute
+      left: 0px
+      bottom: 0px
+
+  li, p, a
+    font-size: 13px
+    color: rgb(240, 240, 240)
+    line-height: 22px
+  p
+    line-height: 2.308
+  a:hover
+    color: $basecolor
+  [class*="col-"], [class^="col-"]
+    margin-bottom: 30px
+  .half
+    li
+      margin-bottom: 15px
+      @media only screen and (min-width: 992px)
+        width: 50%
+        float: left
+      @media (max-width: 768px) and (min-width: 468px)
+        width: 50%
+        float: left
+      @media only screen and (max-width: 992px)
+        margin-bottom: 5px
+  .foot_logo
+    margin-bottom: 20px
+  .wrkng_hrs
+    font-size: 14px
+    color: rgb(255, 255, 255)
+    line-height: 1.571
+    margin-bottom: 25px
+    @media only screen and (min-width: 768px)
+      text-align: right
+  .social_icon
+    display: flex
+    align-items: center
+    @media only screen and (min-width: 992px)
+      justify-content: flex-start
+    li
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 15px
+      a
+        width: 29px
+        height: 29px
+        border-radius: 50%
+        vertical-align: middle
+        font-size: 11px
+        background: rgba(255, 255, 255, 0.10)
+        color: $white
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: 400
+        &:hover
+          background: $basecolor
+
+  #copyright
+    padding: 35px 0
+    border-top: 1px solid rgba(255, 255, 255, 0.10)
+    text-align: center
+    p
+      margin: 0px
+      a, span
+        display: inline-block

@@ -1,0 +1,138 @@
+// ABOUT_PAGE_LAYOUT
+
+/********************ABOUT_PAGE************************/
+#about_page
+  #story_sec
+    .floating_title
+      font-size: 130px
+      font-family: $fontstack2
+      color: rgb(59, 61, 67)
+      text-transform: uppercase
+      text-align: left
+      letter-spacing: 45px
+      margin-bottom: 70px
+      position: relative
+      width: fit-content
+      width: -moz-fit-content
+      @media (max-width: 992px) and (min-width: 768px)
+        font-size: 98px
+        letter-spacing: 15px
+      @media only screen and (max-width: 768px)
+        font-size: 58px
+        letter-spacing: 4px
+        left: 70px
+        margin-bottom: 40px
+
+      &::after
+        content: ""
+        background: rgb(65, 191, 235)
+        position: absolute
+        right: -60px
+        top: 65%
+        width: 150px
+        height: 1px
+        @media (max-width: 992px) and (min-width: 768px)
+          width: 105px
+          right: -56px
+        @media only screen and (max-width: 768px)
+          width: 58px
+          right: -24px
+
+    .sec1
+      padding: 100px 0 85px
+      background: $basecolor3
+      @media (max-width: 1400px) and (min-width: 768px)
+        padding: 70px 0 65px
+      @media only screen and (max-width: 768px)
+        padding: 45px 0 25px
+      .title_sec
+        margin-bottom: 25px
+        .title
+          font-size: 50px
+          font-weight: 300
+          color: rgb(65, 191, 235)
+          margin-bottom: 15px
+          @media only screen and (max-width: 992px)
+            font-size: 38px
+            margin-bottom: 10px
+        .sub_title
+          font-size: 31px
+          font-weight: 300
+          color: rgb(65, 191, 235)
+          @media only screen and (max-width: 992px)
+            font-size: 25px
+
+      .info, .info p
+        font-size: 18px
+        color: rgb(255, 255, 255)
+        font-weight: 300
+        line-height: 1.667
+        @media only screen and (max-width: 992px)
+          font-size: 13px
+      .float_img
+        position: absolute
+        @media only screen and (max-width: 768px)
+          display: none
+
+    .sec2
+      background: $white
+      padding: 60px 0 145px
+      @media (max-width: 992px) and (min-width: 768px)
+        padding: 45px 0 85px
+      @media only screen and (max-width: 768px)
+        padding: 30px 0 65px
+      .quote
+        font-size: 28px
+        font-weight: 300
+        color: rgb(96, 96, 98)
+        line-height: 1.464
+        max-width: 80%
+        @media only screen and (max-width: 992px)
+          font-size: 18px
+  #what_we_do
+    overflow: hidden
+    .lft_sec
+      margin: 130px 0 0
+      padding-right: 45px
+      @media only screen and (max-width: 768px)
+        display: none
+      .img1
+        position: absolute
+        right: 0px
+        top: 0px
+      .img2
+        position: absolute
+        right: 155px
+        bottom: 0px
+    .rit_sec
+      padding: 175px 0 155px 95px
+      @media only screen and (max-width: 768px)
+        padding: 45px 15px
+      .title
+        font-size: 50px
+        color: rgb(65, 191, 235)
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.16
+        margin-bottom: 25px
+        font-weight: 600
+        @media only screen and (max-width: 768px)
+          font-size: 34px
+          line-height: normal
+          margin-bottom: 18px
+      .info
+        font-size: 14px
+        color: rgb(108, 109, 110)
+        font-weight: 400
+        line-height: 2
+        @media only screen and (max-width: 768px)
+          font-size: 13px
+          line-height: 22px
+        p
+          font-size: 14px
+          color: rgb(108, 109, 110)
+          font-weight: 400
+          line-height: 2
+          @media only screen and (max-width: 768px)
+            font-size: 13px
+            line-height: 22px

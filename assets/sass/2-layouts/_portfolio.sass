@@ -1,0 +1,102 @@
+//PORTFOLIO_PAGE
+
+/******************PORTFOLIO_PAGE********************/
+#portfolio_page
+  .portfolioFilter
+    padding: 60px 0 0
+    @media only screen and (max-width: 992px)
+      padding: 35px 0 0
+    i
+      font-size: 39px
+      color: $basecolor
+      display: block
+    ul
+      display: flex
+      padding: 30px 0 45px
+      @media only screen and (max-width: 468px)
+        padding: 30px 0
+      li
+        border-right: 1px solid rgb(193, 194, 195)
+      a
+        font-size: 16px
+        color: rgb(71, 72, 73)
+        padding: 0 12px
+        position: relative
+        @media only screen and (max-width: 468px)
+          font-size: 14px
+        &::after
+          content: ""
+          width: 0
+          height: 0
+          border-left: 11px solid transparent
+          border-right: 11px solid transparent
+          border-top: 11px solid #fff
+          position: absolute
+          bottom: -55px
+          left: 0px
+          right: 0px
+          margin: auto
+          opacity: 0
+          transition: ease-in-out all .3s
+          @media only screen and (max-width: 468px)
+            bottom: -40px
+        &.current
+          color: $basecolor
+          &::after
+            opacity: 1
+  .portfoliosec
+    padding: 70px 0 85px
+    background: $basecolor3
+    .box
+      margin-bottom: 30px
+      .img_box
+        position: relative
+        &::after
+          content: ""
+          background: url(../images/icons/gallery_hvr.png) no-repeat center rgba(22, 27, 29, 0.70)
+          background-size: 35px
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0px
+          top: 0px
+          opacity: 0
+          visibility: hidden
+          transition: ease-in-out all 0.3s
+        &:hover
+          &::after
+            opacity: 1
+            visibility: visible
+      .info_box
+        text-align: center
+        background: $white
+        padding: 25px 15px
+        .pro_name
+          font-size: 18px
+          font-weight: 500
+          color: rgb(31, 31, 31)
+          margin-bottom: 10px
+          @media only screen and (max-width: 768px)
+            font-size: 15px
+        .pro_cat
+          display: flex
+          align-items: center
+          justify-content: center
+          li
+            font-size: 14px
+            color: rgb(125, 125, 125)
+            position: relative
+            @media only screen and (max-width: 768px)
+              font-size: 12px
+            &::after
+              content: ""
+              position: absolute
+              right: 0px
+              top: 0px
+              width: 1px
+              height: 100%
+              border-right: 1px solid rgb(255, 255, 255)
+              transform: rotate(25deg)
+            &:last-child
+              &::after
+                display: none

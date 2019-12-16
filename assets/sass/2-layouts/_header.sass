@@ -1,0 +1,259 @@
+//Header
+
+/***********HEADER**************/
+
+@media only screen and (min-width: 992px)
+  .header .menu-icon
+    display: none
+
+  .navbar-expand-lg .navbar-collapse
+    display: -ms-flexbox !important
+    display: flex !important
+    -ms-flex-preferred-size: auto
+    flex-basis: auto
+
+  .navbar-expand-lg .navbar-nav
+    -ms-flex-direction: row
+    flex-direction: row
+    margin: 0 auto
+
+@media only screen and(max-width:992px)
+  .collapse:not(.show)
+    display: none !important
+    width: 100%
+  .navbar-expand-lg .navbar-nav
+    -ms-flex-direction: column
+    flex-direction: column
+
+#Header
+  background: $white
+  position: absolute
+  top: 0px
+  z-index: 2
+  left: 0px
+  width: 100%
+  @media only screen and (max-width: 992px)
+    padding: 0px
+    position: relative
+  .logo-sec
+    @media only screen and (max-width: 992px)
+      padding: 0px 15px
+      max-width: 180px
+      margin-left: 60px
+    @media (max-width: 576px) and (max-width: 468px)
+      margin-left: 0px
+    @media only screen and (max-width: 576px)
+      max-width: 160px
+      padding: 0 25px
+
+  .main-nav-section
+    // overflow: hidden
+    .container
+      @media only screen and (max-width: 992px)
+        max-width: 100%
+    .row
+      align-items: center
+      justify-content: space-between
+      flex-wrap: nowrap
+  .rit_sec
+    @media only screen and (max-width: 992px)
+      display: flex
+      align-items: center
+
+  .navbar
+    padding: 0px
+    @media only screen and (min-width: 992px)
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        right: -200%
+        top: 0px
+        width: 200%
+        height: 100%
+        background: $basecolor2
+    .navbar-nav
+      @media only screen and (min-width: 1200px)
+        padding-right: 40px
+      @media only screen and (max-width: 1200px)
+        margin-left: 0px
+    .nav-list
+      .link
+        font-size: 14px
+        color: rgb(51, 51, 51)
+        text-transform: uppercase
+        padding: 35px 15px
+        position: relative
+        &::after
+          content: ""
+          position: absolute
+          background: $basecolor2
+          width: 0px
+          height: 2px
+          left: 0px
+          right: 0px
+          bottom: 25px
+          margin: auto
+          transition: ease-in-out all .3s
+        @media (max-width: 1200px) and (min-width: 992px)
+          font-size: 12px
+          padding: 25px 15px
+          &::after
+            bottom: 18px
+
+      &.active, &:hover
+        .link
+          color: $basecolor2
+          &::after
+            width: 15px
+
+    @media only screen and (max-width: 992px)
+      position: absolute
+      left: 0px
+      top: 100%
+      background: $basecolor3
+      width: 100%
+      z-index: 999
+      .nav-list
+        .link
+          font-size: 10px
+          color: #fff !important
+          font-weight: 600
+          text-transform: uppercase
+          line-height: normal
+          padding: 12px 15px
+          border-bottom: 1px solid rgb(47, 50, 60)
+          &::after
+            display: none
+        &.active
+          .link
+            background: $basecolor2
+
+    .dropdown
+      @media only screen and (min-width: 992px)
+        &:hover
+          .dropdown-menu
+            display: block
+        .dropdown-toggle
+          &::after
+            display: none
+      .dropdown-menu
+        margin-top: 0px
+        padding: 0px
+        border-radius: 0px
+        top: 99%
+        min-width: 165px
+        .dropdown-item
+          background: $basecolor2
+          font-size: 14px
+          color: #fff
+          padding: 13px 10px
+          display: block
+          border-bottom: 1px solid rgba(255, 255, 255, 0.20)
+          &:first-child
+            border-top: 0px
+          &:last-child
+            border-bottom: 0px
+          &:hover
+            background: $basecolor3
+          @media only screen and (max-width: 992px)
+            font-size: 10px
+
+
+    .qck_action
+      background: $basecolor2
+      padding: 23px 0
+      padding-left: 60px
+      margin-top: -1px
+      border-left: 1px solid rgba(241, 244, 245, 0.50)
+      position: relative
+      @media only screen and (max-width: 992px)
+        display: none
+      li
+        font-size: 14px
+        color: $white
+        font-weight: 300
+        letter-spacing: 1px
+        i
+          position: absolute
+          left: 25px
+          margin: 0
+          top: 50%
+          -ms-transform: translateY(-50%)
+          transform: translateY(-50%)
+          font-size: 28px
+        a
+          font-size: 20px
+          font-weight: 500
+          color: $white
+          display: block
+          margin-bottom: 5px
+
+  .menu-icon
+    @media only screen and (max-width: 992px)
+      position: absolute
+      left: 0px
+      height: 100%
+      .navbar-toggler
+        height: 100%
+        width: 50px
+        background: $basecolor3
+        cursor: pointer
+        border: none
+        border-radius: 0px
+        outline: none
+        box-shadow: none
+        color: #fff
+        padding: 17px 14px
+        i
+          font-size: 22px
+        .main-icon-bar
+          .icon
+            width: 100%
+            height: 2px
+            background: $basecolor2
+            margin-bottom: 5px
+            transition: ease-in-out all .3s
+            &:nth-child(2)
+              width: 80%
+            &:last-child
+              margin-bottom: 0px
+              width: 70%
+        &:hover
+          .icon
+            width: 100% !important
+
+      @media only screen and (max-width: 576px)
+        position: unset
+
+
+
+  &.sticky
+    position: fixed
+    width: 100%
+    z-index: 999
+    top: 0px
+    animation: ease-in-out
+    transition-delay: 0.5s
+    animation-name: fadeInDown
+    animation-duration: 0.5s
+    animation-fill-mode: both
+    padding-top: 0px
+    /* Firefox */
+    -moz-transition: all 0s ease-in
+    /* WebKit */
+    -webkit-transition: all 0s ease-in
+    /* Opera */
+    -o-transition: all 0s ease-in
+    /* Standard */
+    transition: all 0s ease-in
+    border-top: 0px
+    box-shadow: 0px 0px 12px #00000026
+    .navbar
+      bottom: 0px
+    .top_sec
+      display: none
+
+    .logo-sec
+      max-width: 135px
+      padding: 5px 0

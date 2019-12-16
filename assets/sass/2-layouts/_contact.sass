@@ -1,0 +1,198 @@
+//CONTACT
+/********************CONTACT_PAGE_LAYOUT********************/
+
+#contact_page
+  .contct_info_sec
+    padding: 95px 0  120px
+    @media(max-width: 1400px) and (min-width: 992px)
+      padding: 65px 0
+    @media(max-width: 992px) and (min-width: 768px)
+      padding: 55px 0
+    @media only screen and (max-width: 768px)
+      padding: 45px 0
+
+    .main_head
+      margin-bottom: 65px
+      @media only screen and (max-width: 992px)
+        margin-bottom: 45px
+      &::before
+        display: none
+      .head
+        color: $basecolor3
+    .box
+      @media only screen and (max-width: 992px)
+        margin-bottom: 35px
+      .title
+        font-size: 17px
+        color: rgb(44, 45, 45)
+        line-height: normal
+        padding: 5px 0
+        padding-left: 35px
+        background: url('../images/icons/contact_sprint.png') no-repeat center left
+        margin-bottom: 50px
+        @media (max-width: 992px) and (min-width: 768px)
+          margin-bottom: 30px
+        @media only screen and (max-width: 768px)
+          margin-bottom: 20px
+      .info_box
+        @media only screen and (max-width: 992px)
+          padding-left: 5px
+      .sub
+        font-size: 12px
+        color: rgb(137, 138, 140)
+        line-height: normal
+        margin-bottom: 10px
+      ul
+        li
+          font-size: 14px
+          font-weight: 500
+          color: rgb(27, 27, 27)
+          line-height: 2.321
+          a
+            font-size: 14px
+            color: rgb(27, 27, 27)
+      &.address
+        .title
+          background-position: 0 -65px
+      &.phone
+        .title
+          background-position: 0 -32px
+      &.mail
+        .title
+          background-position: 0 -92px
+      &.working
+        .title
+          background-position: 0 -5px
+        li
+          &:last-child
+            color: rgb(205, 32, 53)
+
+
+  .form_sec
+    margin-bottom: 100px
+    position: relative
+    @media only screen and (max-width: 768px)
+      margin-bottom: 70px
+    @media only screen and (min-width: 1200px)
+      display: flex
+      justify-content: flex-end
+      .sec_title
+        font-size: 11px
+        color: $basecolor3
+        text-transform: uppercase
+        line-height: normal
+        letter-spacing: 3px
+        transform: rotate(-90deg)
+        width: fit-content
+        width: -moz-fit-content
+        height: 15px
+        position: absolute
+        left: 0px
+        margin: auto
+        bottom: 0px
+        top: 0px
+      .form_row
+        width: 95%
+    @media only screen and (max-width: 1200px)
+      .sec_title
+        display: none
+    form
+      padding: 95px 0 70px
+      @media only screen and (max-width: 992px)
+        padding: 50px 0
+    .form_bg
+      background: url('../images/form_bg.jpg') no-repeat center
+      background-size: cover
+      background-attachment: fixed
+      .container
+        position: relative
+        @media only screen and (min-width: 768px)
+          [class*="col-md-6"], [class^="col-md-6"]
+            &:nth-child(odd)
+              padding-right: 30px
+            &:nth-child(even)
+              padding-left: 30px
+
+      .form_title
+        font-size: 35px
+        font-family: $fontstack2
+        color: rgb(255, 255, 255)
+        line-height: normal
+        margin-bottom: 20px
+        @media (max-width: 992px) and (min-width: 468px)
+          font-size: 28px
+          margin-bottom: 10px
+        @media only screen and (max-width: 468px)
+          font-size: 24px
+          margin-bottom: 10px
+      .form_info
+        font-size: 16px
+        color: rgb(255, 255, 255)
+        line-height: normal
+        margin-bottom: 35px
+        @media (max-width: 992px) and (min-width: 468px)
+          font-size: 14px
+          margin-bottom: 25px
+        @media only screen and (max-width: 468px)
+          font-size: 13px
+          margin-bottom: 15px
+      .form-group
+        &::after
+          content: ""
+          display: flex
+          clear: both
+      .form-control
+        font-size: 14px
+        color: rgb(255, 255, 255)
+        line-height: normal
+        height: 60px
+        padding: 0px
+        background: transparent
+        border-radius: 0px
+        border: none
+        border-bottom: 1px solid rgba(255, 255, 255, 0.60)
+        outline: none
+        box-shadow: none
+        &::placeholder
+          font-size: 14px
+          color: rgb(255, 255, 255)
+        @media only screen and (max-width: 992px)
+          font-size: 12px
+          &::placeholder
+            font-size: 12px
+      textarea
+        margin-top: 15px
+      .submit
+        background: $basecolor
+        width: 207px
+        height: 62px
+        font-size: 15.56px
+        color: rgb(255, 255, 255)
+        line-height: 62px
+        border: none
+        box-shadow: none
+        outline: none
+        cursor: pointer
+        float: right
+        margin-top: 35px
+        text-transform: uppercase
+        @media only screen and (max-width: 992px)
+          width: 170px
+          height: 50px
+          font-size: 13px
+          line-height: 50px
+  #contact-map
+    filter: gray
+    -webkit-filter: grayscale(99%)
+    @media only screen and (min-width: 1200px)
+      iframe
+        height: 605px
+    @media (max-width: 1200px) and (min-width: 768px)
+      iframe
+        height: 450px
+    @media (max-width: 768px) and (min-width: 468px)
+      iframe
+        height: 350px
+    @media only screen and (max-width: 468px)
+      iframe
+        height: 250px

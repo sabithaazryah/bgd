@@ -132,7 +132,7 @@
     .dropdown
       @media only screen and (min-width: 992px)
         &:hover
-          .dropdown-menu
+          .first_drop
             display: block
         .dropdown-toggle
           &::after
@@ -143,6 +143,8 @@
         border-radius: 0px
         top: 99%
         min-width: 165px
+        margin: 0
+        border: none
         .dropdown-item
           background: $basecolor2
           font-size: 14px
@@ -150,15 +152,34 @@
           padding: 13px 10px
           display: block
           border-bottom: 1px solid rgba(255, 255, 255, 0.20)
-          &:first-child
-            border-top: 0px
-          &:last-child
-            border-bottom: 0px
           &:hover
             background: $basecolor3
           @media only screen and (max-width: 992px)
             font-size: 10px
-
+        li
+          &:first-child
+            .dropdown-item
+              border-top: 0px
+          &:last-child
+            .dropdown-item
+              border-bottom: 0px
+    .dropdown-submenu
+      position: relative
+      .dropdown-menu
+        top: 0px
+        right: -100%
+        left: auto
+        border: none
+        .dropdown-item
+          background: rgb(122, 150, 28)
+      @media only screen and (min-width: 992px)
+        &:hover
+          .dropdown-menu
+            display: block
+      @media only screen and (max-width: 992px)
+        &.show
+          .dropdown-menu
+            display: block
 
     .qck_action
       background: $basecolor2

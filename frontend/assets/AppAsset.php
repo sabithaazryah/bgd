@@ -16,7 +16,7 @@ class AppAsset extends AssetBundle {
         'assets/css/style.css',
     ];
     public $js = [
-        'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
+//        'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
         'https://unpkg.com/popper.js@1.14.6/dist/umd/popper.min.js',
         'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js',

@@ -556,7 +556,7 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
         #Header .navbar .nav-list.active .link {
           background: #9dc029; } }
     @media only screen and (min-width: 992px) {
-      #Header .navbar .dropdown:hover .dropdown-menu {
+      #Header .navbar .dropdown:hover .first_drop {
         display: block; }
       #Header .navbar .dropdown .dropdown-toggle::after {
         display: none; } }
@@ -565,7 +565,9 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
       padding: 0px;
       border-radius: 0px;
       top: 99%;
-      min-width: 165px; }
+      min-width: 165px;
+      margin: 0;
+      border: none; }
       #Header .navbar .dropdown .dropdown-menu .dropdown-item {
         background: #9dc029;
         font-size: 14px;
@@ -573,15 +575,30 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
         padding: 13px 10px;
         display: block;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-        #Header .navbar .dropdown .dropdown-menu .dropdown-item:first-child {
-          border-top: 0px; }
-        #Header .navbar .dropdown .dropdown-menu .dropdown-item:last-child {
-          border-bottom: 0px; }
         #Header .navbar .dropdown .dropdown-menu .dropdown-item:hover {
           background: #272931; }
         @media only screen and (max-width: 992px) {
           #Header .navbar .dropdown .dropdown-menu .dropdown-item {
             font-size: 10px; } }
+      #Header .navbar .dropdown .dropdown-menu li:first-child .dropdown-item {
+        border-top: 0px; }
+      #Header .navbar .dropdown .dropdown-menu li:last-child .dropdown-item {
+        border-bottom: 0px; }
+    #Header .navbar .dropdown-submenu {
+      position: relative; }
+      #Header .navbar .dropdown-submenu .dropdown-menu {
+        top: 0px;
+        right: -100%;
+        left: auto;
+        border: none; }
+        #Header .navbar .dropdown-submenu .dropdown-menu .dropdown-item {
+          background: #7a961c; }
+      @media only screen and (min-width: 992px) {
+        #Header .navbar .dropdown-submenu:hover .dropdown-menu {
+          display: block; } }
+      @media only screen and (max-width: 992px) {
+        #Header .navbar .dropdown-submenu.show .dropdown-menu {
+          display: block; } }
     #Header .navbar .qck_action {
       background: #9dc029;
       padding: 23px 0;
@@ -1708,6 +1725,257 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
             font-size: 13px;
             line-height: 22px; } }
 
+/*****************OUR_TEAM********************* */
+#team_page #team_info {
+  padding: 90px 0 60px; }
+  @media only screen and (max-width: 768px) {
+    #team_page #team_info {
+      padding: 45px 0; } }
+  #team_page #team_info .row {
+    justify-content: center;
+    align-items: flex-end; }
+  #team_page #team_info .main_head .head {
+    color: #414141; }
+  @media only screen and (min-width: 992px) {
+    #team_page #team_info .img_box {
+      padding-left: 30px; } }
+  @media only screen and (max-width: 768px) {
+    #team_page #team_info .img_box {
+      display: none; } }
+#team_page #team_list {
+  background: #272931;
+  padding: 100px 0 20px; }
+  #team_page #team_list .box {
+    margin-bottom: 30px; }
+    #team_page #team_list .box .img_box {
+      filter: grayscale(1);
+      transition: ease-in-out all 0.3s; }
+    #team_page #team_list .box .info_box {
+      padding: 20px 0 0;
+      text-align: center; }
+      #team_page #team_list .box .info_box .name {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px; }
+      #team_page #team_list .box .info_box .position {
+        font-size: 13px;
+        color: #828385; }
+      #team_page #team_list .box .info_box .social_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease-in-out all 0.3s; }
+        #team_page #team_list .box .info_box .social_icon li {
+          margin-right: 20px; }
+          #team_page #team_list .box .info_box .social_icon li:last-child {
+            margin-right: 0px; }
+        #team_page #team_list .box .info_box .social_icon a {
+          font-size: 12px;
+          color: white; }
+          #team_page #team_list .box .info_box .social_icon a:hover {
+            color: #9dc029; }
+    #team_page #team_list .box:hover .img_box {
+      filter: none; }
+    #team_page #team_list .box:hover .info_box .social_icon {
+      opacity: 1;
+      visibility: visible; }
+#team_page #y_choose {
+  padding: 70px 0 170px; }
+  @media only screen and (max-width: 768px) {
+    #team_page #y_choose {
+      padding: 45px 0; } }
+  #team_page #y_choose .main_head {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 55px; }
+    @media only screen and (max-width: 768px) {
+      #team_page #y_choose .main_head {
+        margin-bottom: 35px; } }
+    #team_page #y_choose .main_head .lead {
+      color: #41bfeb; }
+    #team_page #y_choose .main_head .head {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      color: #272931; }
+    #team_page #y_choose .main_head::before {
+      left: 0px;
+      right: 0px;
+      margin-right: auto;
+      bottom: auto;
+      width: 1px;
+      height: 86px;
+      top: -110px; }
+      @media only screen and (max-width: 768px) {
+        #team_page #y_choose .main_head::before {
+          top: -70px;
+          height: 56px; } }
+  @media only screen and (max-width: 768px) {
+    #team_page #y_choose .row {
+      margin: 0px; } }
+  #team_page #y_choose .box {
+    padding: 40px 40px 50px;
+    background: white;
+    box-shadow: 0px 16px 49px 0px rgba(0, 0, 0, 0.08); }
+    @media only screen and (max-width: 768px) {
+      #team_page #y_choose .box {
+        padding: 35px 25px 30px; } }
+    #team_page #y_choose .box .icon {
+      font-size: 37px;
+      color: #41bfeb;
+      margin-bottom: 35px;
+      display: block; }
+      @media only screen and (max-width: 768px) {
+        #team_page #y_choose .box .icon {
+          font-size: 32px;
+          margin-bottom: 20px; } }
+    #team_page #y_choose .box .title {
+      font-size: 20px;
+      color: #272a2c;
+      font-weight: 600;
+      margin-bottom: 35px;
+      line-height: normal; }
+      @media only screen and (max-width: 768px) {
+        #team_page #y_choose .box .title {
+          font-size: 16px;
+          margin-bottom: 20px; } }
+    #team_page #y_choose .box .info {
+      font-size: 13px;
+      color: #272a2c;
+      font-weight: 500;
+      line-height: 1.45; }
+      #team_page #y_choose .box .info p {
+        font-size: 13px;
+        color: #7c7c7d;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 0px; }
+#team_page #achivements {
+  padding: 110px 0 170px; }
+  @media only screen and (max-width: 768px) {
+    #team_page #achivements {
+      padding: 45px 0; } }
+  #team_page #achivements .main_head {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 55px; }
+    @media only screen and (max-width: 768px) {
+      #team_page #achivements .main_head {
+        margin-bottom: 35px; } }
+    #team_page #achivements .main_head .lead {
+      color: #41bfeb; }
+    #team_page #achivements .main_head .head {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 300; }
+    #team_page #achivements .main_head::before {
+      left: 0px;
+      right: 0px;
+      margin-right: auto;
+      bottom: auto;
+      width: 1px;
+      height: 56px;
+      top: -80px; }
+  #team_page #achivements .box {
+    padding: 0 10px;
+    text-align: center; }
+    #team_page #achivements .box .icon {
+      font-size: 54px;
+      color: #9dc029;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      max-height: 56px;
+      overflow: hidden; }
+      @media only screen and (max-width: 768px) {
+        #team_page #achivements .box .icon {
+          font-size: 38px; } }
+      @media only screen and (max-width: 768px) {
+        #team_page #achivements .box .icon {
+          min-height: 40px;
+          max-height: 40px; } }
+    #team_page #achivements .box .count {
+      font-size: 50px;
+      color: #9dc029;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center; }
+      @media only screen and (max-width: 768px) {
+        #team_page #achivements .box .count {
+          font-size: 26px; } }
+    #team_page #achivements .box .title {
+      font-size: 16px;
+      color: white;
+      line-height: normal; }
+      @media only screen and (max-width: 768px) {
+        #team_page #achivements .box .title {
+          font-size: 12px; } }
+
+@media only screen and (min-width: 768px) {
+  #speciality {
+    padding-bottom: 45px; } }
+#speciality .container {
+  background: #41bfeb;
+  padding: 0px;
+  box-shadow: 0px 16px 49px 0px rgba(0, 0, 0, 0.08); }
+  @media only screen and (min-width: 992px) {
+    #speciality .container {
+      padding: 60px 0; } }
+  @media only screen and (min-width: 768px) {
+    #speciality .container {
+      position: relative;
+      top: -60px; } }
+  #speciality .container .row {
+    margin: 0px; }
+#speciality .box {
+  padding: 0 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4); }
+  @media only screen and (max-width: 992px) {
+    #speciality .box {
+      padding: 30px; }
+      #speciality .box:nth-child(2) {
+        border-right: 0px; }
+      #speciality .box:last-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.4); } }
+  @media only screen and (max-width: 576px) {
+    #speciality .box {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      border-right: 0px;
+      border-top: 0px; }
+      #speciality .box:last-child {
+        border-top: 0px;
+        border-bottom: 0px; } }
+  #speciality .box .icon {
+    font-size: 41px;
+    color: white;
+    display: block;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 992px) {
+      #speciality .box .icon {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 768px) {
+      #speciality .box .icon {
+        font-size: 32px; } }
+  #speciality .box .title {
+    font-size: 24px;
+    color: #fdfdfd;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px; }
+    @media only screen and (max-width: 768px) {
+      #speciality .box .title {
+        font-size: 16px;
+        margin-bottom: 20px; } }
+  #speciality .box .info, #speciality .box .info p {
+    font-size: 13px;
+    color: white;
+    line-height: 2; }
+  #speciality .box:last-child {
+    border-right: 0px; }
+
 /*************************SERVICE_PAGE********************** */
 #service_page #service_list {
   padding-top: 60px; }
@@ -2076,6 +2344,16 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
           margin-right: 0px; }
         #panorama_page #panoramas .pro_dtl .box .social_icon a {
           color: white; }
+  #panorama_page #panoramas .pro_info {
+    text-align: center;
+    max-width: 80%;
+    margin: auto; }
+    #panorama_page #panoramas .pro_info p {
+      text-align: center;
+      font-size: 14px;
+      color: #b3b3b3;
+      line-height: 1.786;
+      margin-bottom: 5px; }
   #panorama_page #panoramas .plain_btn {
     background: #41bfeb;
     color: white;
@@ -2180,8 +2458,18 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
             #panorama_page #panoramas .qck_action .cntnt_sec ul a i {
               font-size: 16px;
               margin-right: 5px; } }
-#panorama_page.panorama_dtl_page #panoramas::before {
-  height: 30%; }
+#panorama_page.panorama_dtl_page #panoramas {
+  padding-bottom: 75px; }
+  @media only screen and (max-width: 768px) {
+    #panorama_page.panorama_dtl_page #panoramas {
+      padding-bottom: 45px; } }
+  #panorama_page.panorama_dtl_page #panoramas::before {
+    height: 30%; }
+@media only screen and (min-width: 992px) {
+  #panorama_page.panorama_dtl_page .viewer {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 45px; } }
 
 /********************CONTACT_PAGE_LAYOUT******************* */
 #contact_page .contct_info_sec {

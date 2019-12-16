@@ -129,7 +129,6 @@ $controler = Yii::$app->controller->id;
                             </ul>
                         </li>
 
-
                         <li class="treeview <?= $controler == 'portfolio' || $controler == 'portfolio-category' ? 'active' : '' ?>">
                             <a href="">
                                 <i class="fa fa-building"></i>
@@ -150,9 +149,11 @@ $controler = Yii::$app->controller->id;
                         <li class="<?= $controler == 'contacts-info' ? 'active' : '' ?>">
                             <?= Html::a('<i class="fa fa-address-card"></i> Contact Info', ['/cms/contacts-info/update'], ['class' => 'title']) ?>
                         </li>
+
                         <li class="<?= $controler == 'contact-enquiry' ? 'active' : '' ?>">
                             <?= Html::a('<i class="fa fa-comment"></i> Contact Enquiry', ['/cms/contact-enquiry/index'], ['class' => 'title']) ?>
                         </li>
+
                         <li class="<?= $controler == 'meta-tags' ? 'active' : '' ?>">
                             <?= Html::a('<i class="fa fa-tags"></i> Meta Tags', ['/cms/meta-tags/index'], ['class' => 'title']) ?>
                         </li>

@@ -19,6 +19,7 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex" /> 
         <link rel="icon" href="<?= Yii::$app->homeUrl ?>assets/images/favicon.png">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="<?= Yii::$app->homeUrl ?>assets/js/photo-sphere-viewer.js"></script>
         <script type="text/javascript" src="<?= Yii::$app->homeUrl ?>assets/js/three.min.js"></script>
 
@@ -85,11 +86,10 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
                                             <a data-toggle="dropdown" class="link" href="#!">About</a>
                                             <div class="dropdown-menu">
                                                 <?= Html::a('Who We Are', ['/site/about'], ['class' => 'dropdown-item']) ?>
-                                                <?= Html::a('Our Team', ['/site/about'], ['class' => 'dropdown-item']) ?>
+                                                <?= Html::a('Our Team', ['/site/team'], ['class' => 'dropdown-item']) ?>
                                             </div>
                                         </li>
-                                        <li
-                                            class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
+                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
                                             <a data-toggle="dropdown" class="link">Services</a>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="residential_service.php">Residential</a>

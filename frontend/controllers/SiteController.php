@@ -84,6 +84,12 @@ class SiteController extends Controller {
         ]);
     }
 
+    public function actionTeam() {
+
+        return $this->render('our_team', [
+        ]);
+    }
+
     /**
      * Displays contact page.
      *

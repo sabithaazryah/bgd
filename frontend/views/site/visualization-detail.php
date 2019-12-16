@@ -22,11 +22,9 @@
         <div class="container">
             <div class="main_head">
                 <div class="head">
-                    Kids Bedroom
+                    <?= $visualisation_Detail->title ?>
                 </div>
-                <div class="sub_head">
-                    Elegant and simple bedroom for Kids with a built in bunk bed fits for them and color style to match their age
-                </div>
+                <div class="sub_head"><?= $visualisation_Detail->description ?></div>
             </div>
             <div id="viewer" class="viewer"></div>
             <div class="pro_dtl">
@@ -35,7 +33,7 @@
                         Location:
                     </div>
                     <ul>
-                        <li>The Meadows-Dubai</li>
+                        <li><?= $visualisation_Detail->location ?></li>
                     </ul>
                 </div>
                 <div class="box">
@@ -43,7 +41,7 @@
                         Scope:
                     </div>
                     <ul>
-                        <li>Villa Interior Design</li>
+                        <li><?= $visualisation_Detail->scope ?></li>
                     </ul>
                 </div>
                 <div class="box">
@@ -51,30 +49,39 @@
                         Follow us
                     </div>
                     <ul class="social_icon">
-                        <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
-                        <li><a class="fab fa-twitter" target="_blank" href="https://twitter.com/"></a></li>
-                        <li><a class="fab fa-linkedin" target="_blank" href="https://www.linkedin.com"></a></li>
-                        <li><a class="fab fa-instagram" target="_blank" href="https://www.instagram.com/"></a></li>
+                        <li><a class="fab fa-facebook-f" target="_blank" href="<?= $visualisation_Detail->facebook_link ?>"></a></li>
+                        <li><a class="fab fa-twitter" target="_blank" href="<?= $visualisation_Detail->twitter_link ?>"></a></li>
+                        <li><a class="fab fa-linkedin" target="_blank" href="<?= $visualisation_Detail->linkedin_link ?>"></a></li>
+                        <li><a class="fab fa-instagram" target="_blank" href="<?= $visualisation_Detail->instegram_link ?>"></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="gallery_listing">
-                <div class="item">
-                    <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                        <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                        <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img_box" data-fancybox="gallery" tabindex="0">
-                        <img src="<?= Yii::$app->homeUrl ?>assets/images/works/1.jpg" class="img-fluid" alt="">
-                    </a>
-                </div>
+                <?php
+                $path = Yii::getAlias('@paths') . '/panorama-design/gallery/' . $visualisation_Detail->id;
+                if (count(glob("{$path}/*")) > 0) {
+                    $k = 0;
+                    foreach (glob("{$path}/*") as $file) {
+                        $k++;
+                        $arry = explode('/', $file);
+                        $img_nmee = end($arry);
+
+                        $img_nmees = explode('.', $img_nmee);
+                        if ($img_nmees['1'] != '') {
+                            ?>
+                            <div class="item">
+                                <a href="<?= Yii::$app->homeUrl . 'images/panorama-design/gallery/' . $visualisation_Detail->id . '/' . end($arry) ?>" class="img_box" data-fancybox="gallery" tabindex="0">
+                                    <img src="<?= Yii::$app->homeUrl . 'images/panorama-design/gallery/' . $visualisation_Detail->id . '/' . end($arry) ?>" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <?php
+                        }
+                    }
+                }
+                ?>
+
             </div>
 
             <div class="qck_action">

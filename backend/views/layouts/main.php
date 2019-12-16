@@ -112,6 +112,28 @@ $controler = Yii::$app->controller->id;
                         <li class="<?= $controler == 'about' ? 'active' : '' ?>">
                             <?= Html::a('<i class="fa fa-flag"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
+
+
+                        <li class="treeview <?= $controler == 'service-category' || $controler == 'service-subcategory' || $controler == 'services' ? 'active' : '' ?>">
+                            <a href="">
+                                <i class="fa fa-server"></i>
+                                <span>Services</span>
+                                <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Service Category', ['/cms/service-category/index'], ['class' => 'title']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Service Subcategory', ['/cms/service-subcategory/index'], ['class' => 'title']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Services', ['/cms/services/index'], ['class' => 'title']) ?>
+                                </li>
+
+                            </ul>
+                        </li>
+
                         <li class="treeview <?= $controler == 'panorama-visualization' || $controler == 'animation-design' ? 'active' : '' ?>">
                             <a href="">
                                 <i class="fa fa-product-hunt"></i>

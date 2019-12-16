@@ -91,12 +91,25 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
                                         </li>
                                         <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
                                             <a data-toggle="dropdown" class="link">Services</a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="residential_service.php">Residential</a>
-                                                <a class="dropdown-item" href="#!">Commercial</a>
-                                                <a class="dropdown-item" href="#!">Hospitality</a>
-                                                <a class="dropdown-item" href="#!">3D Visualization</a>
-                                            </div>
+                                            <ul class="dropdown-menu first_drop">
+                                                <li class="nav-list dropdown-submenu">
+                                                    <a class="dropdown-item" data-toggle="dropdown" href="residential_service.php">Residential</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#!">Villa Interior Design</a></li>
+                                                        <li><a class="dropdown-item" href="#!">Villa Exterior Design</a></li>
+                                                        <li><a class="dropdown-item" href="#!">Villa Landscape Design</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#!">Commercial</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#!">Hospitality</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#!">3D Visualization</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li class="nav-list dropdown <?= $action == 'portfolio' ? 'active' : '' ?>">
                                             <?= Html::a('Portfolio', ['/site/portfolio'], ['class' => 'link']) ?>

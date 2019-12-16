@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\AnimationDesignSearch */
+/* @var $searchModel common\models\ServiceCategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Animation Designs';
+$this->title = 'Service Categories';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="animation-design-index">
+<div class="service-category-index">
 
     <div class="row">
         <div class="col-md-12">
@@ -24,15 +24,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="panel-body">
                     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-                    <?= Html::a('<i class="fa fa-list"></i><span> Create Animation Design</span>', ['create'], ['class' => 'btn btn-block btn-info btn-sm']) ?>
+                    <?= Html::a('<i class="fa fa-list"></i><span> Create Service Category</span>', ['create'], ['class' => 'btn btn-block btn-info btn-sm']) ?>
                     <?=
                     GridView::widget([
                         'dataProvider' => $dataProvider,
                         'filterModel' => $searchModel,
                         'columns' => [
                             ['class' => 'yii\grid\SerialColumn'],
-                            'title',
-                            'video_link:ntext',
+                            'category',
                             [
                                 'attribute' => 'status',
                                 'value' => function($model, $key, $index, $column) {

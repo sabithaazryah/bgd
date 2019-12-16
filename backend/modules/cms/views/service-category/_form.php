@@ -4,22 +4,22 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\AnimationDesign */
+/* @var $model common\models\ServiceCategory */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="animation-design-form form-inline">
+<div class="service-category-form form-inline">
 
     <?php $form = ActiveForm::begin(); ?>
     <div class="row">
         <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
-            <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'category')->textInput(['maxlength' => true]) ?>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
+            <?= $form->field($model, 'canonical_name')->textInput(['readonly' => true]) ?>
         </div>
         <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>
             <?= $form->field($model, 'status')->dropDownList(['1' => 'Enabled', '0' => 'Disabled']) ?>
-        </div>
-        <div class='col-md-12 col-sm-12 col-xs-12 left_padd'>
-            <?= $form->field($model, 'video_link')->textarea(['rows' => 2]) ?>
         </div>
     </div>
     <div class="row">

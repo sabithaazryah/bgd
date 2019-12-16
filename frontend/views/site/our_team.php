@@ -53,7 +53,7 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/personnel-1-1.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
@@ -74,14 +74,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/mina.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                Mina Saaid
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                Planning Manager
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
@@ -95,14 +95,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/jenette.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                Jennette Jones
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                Senior Interior
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
@@ -116,14 +116,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/john.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                John Scott
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                Project Manager
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
@@ -137,14 +137,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/paula.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                Paula James
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                Company’s Secretary
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
@@ -158,14 +158,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/steve.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                Steve Cooke
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                Architecture Head
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
@@ -179,14 +179,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/abby.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                Abby Ashton
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                Lighting Manager
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>
@@ -200,14 +200,14 @@
                 <div class="col-lg-3 col-sm-4 col-6">
                     <div class="box">
                         <div class="img_box">
-                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/1.jpg" class="img-fluid" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/team/paul.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="info_box">
                             <div class="name">
-                                John Balmer
+                                Paul Smith
                             </div>
                             <div class="position">
-                                CEO & Founder
+                                CFO
                             </div>
                             <ul class="social_icon">
                                 <li><a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/"></a></li>

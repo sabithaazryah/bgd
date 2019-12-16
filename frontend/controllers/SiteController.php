@@ -68,8 +68,9 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionIndex() {
-
+        $portfolio = \common\models\Portfolio::find()->where(['status' => 1])->limit(10)->all();
         return $this->render('index', [
+                    'portfolio' => $portfolio,
         ]);
     }
 
@@ -107,12 +108,16 @@ class SiteController extends Controller {
     }
 
     public function actionVisualization() {
+        $visualisation = \common\models\PanoramaVisualization::find()->where(['status' => 1])->all();
         return $this->render('visualization', [
+                    'visualisation' => $visualisation,
         ]);
     }
 
-    public function actionVisualizationDetail() {
+    public function actionVisualizationDetail($data) {
+        $visualisation_Detail = \common\models\PanoramaVisualization::find()->where(['canonical_name' => $data])->one();
         return $this->render('visualization-detail', [
+                    'visualisation_Detail' => $visualisation_Detail,
         ]);
     }
 

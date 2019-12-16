@@ -2,6 +2,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 $this->title = '';
 if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
@@ -132,7 +133,7 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
         <div class="row">
             <div class="col-lg-4 col-sm-6">
                 <div class="box">
-                    <a data-fancybox="gallery" href="assets/images/gallery/1.jpg" class="img_box">
+                    <a  href="#" class="img_box">
                         <div class="img" style="background: url('assets/images/gallery/1.jpg')"></div>
                     </a>
                     <div class="pro_name">
@@ -142,51 +143,51 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="box">
-                    <a data-fancybox="gallery" href="assets/images/gallery/1.jpg" class="img_box">
-                        <div class="img" style="background: url('assets/images/gallery/1.jpg')"></div>
+                    <a  href="#" class="img_box">
+                        <div class="img" style="background: url('assets/images/services/villa-exterior.jpg')"></div>
                     </a>
                     <div class="pro_name">
-                        Villa Interior Design
+                        Villa Exterior Design
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="box">
-                    <a data-fancybox="gallery" href="assets/images/gallery/1.jpg" class="img_box">
-                        <div class="img" style="background: url('assets/images/gallery/1.jpg')"></div>
+                    <a  href="#" class="img_box">
+                        <div class="img" style="background: url('assets/images/services/360.jpg')"></div>
                     </a>
                     <div class="pro_name">
-                        Villa Interior Design
+                        360° Panorama Design
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="box">
-                    <a data-fancybox="gallery" href="assets/images/gallery/1.jpg" class="img_box">
-                        <div class="img" style="background: url('assets/images/gallery/1.jpg')"></div>
+                    <a  href="#" class="img_box">
+                        <div class="img" style="background: url('assets/images/services/villa-landscape.jpg')"></div>
                     </a>
                     <div class="pro_name">
-                        Villa Interior Design
+                        Villa Landscape Design
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="box">
-                    <a data-fancybox="gallery" href="assets/images/gallery/1.jpg" class="img_box">
-                        <div class="img" style="background: url('assets/images/gallery/1.jpg')"></div>
+                    <a href="#" class="img_box">
+                        <div class="img" style="background: url('assets/images/services/office.jpg')"></div>
                     </a>
                     <div class="pro_name">
-                        Villa Interior Design
+                        Office Interior Design
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="box">
-                    <a data-fancybox="gallery" href="assets/images/gallery/1.jpg" class="img_box">
-                        <div class="img" style="background: url('assets/images/gallery/1.jpg')"></div>
+                    <a href="#" class="img_box">
+                        <div class="img" style="background: url('assets/images/services/animation.jpg')"></div>
                     </a>
                     <div class="pro_name">
-                        Villa Interior Design
+                        Animation Design
                     </div>
                 </div>
             </div>
@@ -248,66 +249,30 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
         </div>
         <div class="slider center">
             <div class="our_works_slide">
-                <div class="item">
-                    <div class="pro_box">
-                        <a href="#!" class="img_box" style="background: url('assets/images/works/1.jpg')">
-                            <div class="overlay">
-                                <center>
 
-                                    <i class="flaticon-instagram-logo"></i>
-                                    <div class="pro_name">
-                                        Nad AL Shiba Villa
-                                    </div>
-                                    <ul>
-                                        <li>interior</li>
-                                        <li>Living Room</li>
-                                    </ul>
-                                </center>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="pro_box">
-                        <a href="#!" class="img_box" style="background: url('assets/images/works/1.jpg')">
-                            <div class="overlay">
-                                <center>
+                <?php foreach ($portfolio as $portfolios) { ?>
+                    <div class="item">
+                        <div class="pro_box">
+                            <a href="#!" class="img_box" style="background: url('<?= Yii::$app->homeUrl ?>images/portfolio/portfolio<?= $portfolios->id ?>.<?= $portfolios->image ?>')">
+                                <div class="overlay">
+                                    <center>
 
-                                    <i class="flaticon-instagram-logo"></i>
-                                    <div class="pro_name">
-                                        Nad AL Shiba Villa
-                                    </div>
-                                    <ul>
-                                        <li>interior</li>
-                                        <li>Living Room</li>
-                                    </ul>
-                                </center>
-                            </div>
-                        </a>
+                                        <i class="flaticon-instagram-logo"></i>
+                                        <div class="pro_name">
+                                            <?= $portfolios->name ?>
+                                        </div>
+                                        <ul>
+                                            <li><?= $portfolios->description ?></li>
+                                        </ul>
+                                    </center>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="pro_box">
-                        <a href="#!" class="img_box" style="background: url('assets/images/works/1.jpg')">
-                            <div class="overlay">
-                                <center>
-
-                                    <i class="flaticon-instagram-logo"></i>
-                                    <div class="pro_name">
-                                        Nad AL Shiba Villa
-                                    </div>
-                                    <ul>
-                                        <li>interior</li>
-                                        <li>Living Room</li>
-                                    </ul>
-                                </center>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
-        <a href="#!" class="plain_btn">View All Services</a>
+        <a href="<?= Url::to(['site/portfolio']) ?>" class="plain_btn">View All Works</a>
     </div>
 </section>
 
@@ -383,7 +348,7 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
             </div>
         </div>
         <div id="viewer" class="viewer"></div>
-        <a href="#!" class="plain_btn">See More Panoramas</a>
+        <a href="<?= Url::to(['site/visualization']) ?>" class="plain_btn">See More Panoramas</a>
     </div>
 </section>
 

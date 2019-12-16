@@ -6,6 +6,7 @@ use yii\helpers\Html;
 use frontend\assets\AppAsset;
 
 AppAsset::register($this);
+$action = Yii::$app->controller->action->id;
 $home_content = \common\models\HomeContents::findOne(1);
 $contact_info = \common\models\ContactsInfo::findOne(1);
 ?>
@@ -17,7 +18,7 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex" /> 
-        <link rel="icon" href="assets/images/favicon.png">
+        <link rel="icon" href="<?= Yii::$app->homeUrl ?>assets/images/favicon.png">
         <?php $this->registerCsrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
@@ -69,14 +70,14 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
                                     </div>
                                 </button>
                             </div>
-                            <div class="logo-sec"><a href="index.php" class="logo"><img src="assets/images/logo.png" alt="logo" class="img-fluid"/></a></div>
+                            <div class="logo-sec"><a href="<?= Yii::$app->homeUrl ?>" class="logo"><img src="<?= Yii::$app->homeUrl ?>assets/images/logo.png" alt="logo" class="img-fluid"/></a></div>
 
                             <nav class="navbar navbar-toggleable-lg navbar-light bg-faded navbar-expand-lg">
                                 <div class="collapse navbar-collapse" id="navbarNavDropdown2">
                                     <ul class="navbar-nav">
-                                        <li
-                                            class="nav-list <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'index' ? 'active' : '' ?>">
-                                            <a class="link" href="index.php">Home</a></li>
+                                        <li class="nav-list <?= $action == 'index' ? 'active' : '' ?>">
+                                            <?= Html::a('Home', ['/site/index'], ['class' => 'link']) ?>
+                                        </li>
                                         <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'about' ? 'active' : '' ?>">
                                             <a data-toggle="dropdown" class="link" href="#!">About</a>
                                             <div class="dropdown-menu">
@@ -84,18 +85,15 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
                                                 <a class="dropdown-item" href="#">Our Team</a>
                                             </div>
                                         </li>
-                                        <li
-                                            class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
+                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
                                             <a href="#!" class="link">Services</a></li>
-                                        <li
-                                            class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'portfolio' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
+                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'portfolio' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
                                             <a href="portfolio.php" class="link">Portfolio</a></li>
-                                        <li
-                                            class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == '360' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
+                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == '360' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
                                             <a href="360.php" class="link">360°</a></li>
-                                        <li
-                                            class="nav-list <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'contact' ? 'active' : '' ?>">
-                                            <a class="link" href="contact.php">Contact Us</a></li>
+                                        <li class="nav-list <?= $action == 'contact' ? 'active' : '' ?>">
+                                            <?= Html::a('Contact Us', ['/site/contact'], ['class' => 'link']) ?>
+                                        </li>
                                     </ul>
                                     <ul class="qck_action">
                                         <li><a href="tel:+971559643550"><i class="flaticon-phone-call"></i>+971 55 964 3550</a>Enquire now</li>
@@ -113,7 +111,7 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
         <!--header-->
         <?= $content ?>
 
-        <footer data-parallax="scroll" data-image-src="assets/images/footbg.jpg">
+        <footer data-parallax="scroll" data-image-src="<?= Yii::$app->homeUrl ?>assets/images/footbg.jpg">
             <div class="container wow fadeIn animated">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-6 half">
@@ -152,7 +150,7 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
                     </div>
                     <div class="col-lg-2 col-md-4 col-6">
                         <div class="foot_logo">
-                            <img src="assets/images/logo.png" alt="">
+                            <img src="<?= Yii::$app->homeUrl ?>assets/images/logo.png" alt="">
                         </div>
                         <div class="wrkng_hrs">
                             Working Hours

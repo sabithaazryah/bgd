@@ -74,6 +74,17 @@ class SiteController extends Controller {
     }
 
     /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionAbout() {
+
+        return $this->render('about', [
+        ]);
+    }
+
+    /**
      * Displays contact page.
      *
      * @return mixed

@@ -53,11 +53,16 @@ return [
                 'yii\web\JqueryAsset' => [
                     'js' => []
                 ],
-                'yii\bootstrap\BootstrapPluginAsset' => [
-                    'js' => []
-                ],
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [],
+                ],
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => null,
+                    'js' => ['https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js']
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => []
                 ],
             ],
         ],

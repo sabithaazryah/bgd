@@ -26,8 +26,8 @@ class AppAsset extends AssetBundle {
         'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js',
         'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js',
-        'assets/js/photo-sphere-viewer.js',
-        'assets/js/three.min.js',
+//        'assets/js/photo-sphere-viewer.js',
+//        'assets/js/three.min.js',
         'assets/js/parallax.js',
         'assets/js/app.js',
     ];

@@ -19,6 +19,9 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex" /> 
         <link rel="icon" href="<?= Yii::$app->homeUrl ?>assets/images/favicon.png">
+        <script type="text/javascript" src="<?= Yii::$app->homeUrl ?>assets/js/photo-sphere-viewer.js"></script>
+        <script type="text/javascript" src="<?= Yii::$app->homeUrl ?>assets/js/three.min.js"></script>
+
         <?php $this->registerCsrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
@@ -78,19 +81,29 @@ $contact_info = \common\models\ContactsInfo::findOne(1);
                                         <li class="nav-list <?= $action == 'index' ? 'active' : '' ?>">
                                             <?= Html::a('Home', ['/site/index'], ['class' => 'link']) ?>
                                         </li>
-                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'about' ? 'active' : '' ?>">
+                                        <li class="nav-list dropdown <?= $action == 'about' ? 'active' : '' ?>">
                                             <a data-toggle="dropdown" class="link" href="#!">About</a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="about.php">Who We Are</a>
-                                                <a class="dropdown-item" href="#">Our Team</a>
+                                                <?= Html::a('Who We Are', ['/site/about'], ['class' => 'dropdown-item']) ?>
+                                                <?= Html::a('Our Team', ['/site/about'], ['class' => 'dropdown-item']) ?>
                                             </div>
                                         </li>
-                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
-                                            <a href="#!" class="link">Services</a></li>
-                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'portfolio' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
-                                            <a href="portfolio.php" class="link">Portfolio</a></li>
-                                        <li class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == '360' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
-                                            <a href="360.php" class="link">360°</a></li>
+                                        <li
+                                            class="nav-list dropdown <?= basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'services' || basename($_SERVER["SCRIPT_FILENAME"], '.php') == 'buggy-dtl' ? 'active' : '' ?>">
+                                            <a data-toggle="dropdown" class="link">Services</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="residential_service.php">Residential</a>
+                                                <a class="dropdown-item" href="#!">Commercial</a>
+                                                <a class="dropdown-item" href="#!">Hospitality</a>
+                                                <a class="dropdown-item" href="#!">3D Visualization</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-list dropdown <?= $action == 'portfolio' ? 'active' : '' ?>">
+                                            <?= Html::a('Portfolio', ['/site/portfolio'], ['class' => 'link']) ?>
+                                        </li>
+                                        <li class="nav-list dropdown <?= $action == 'visualization' || $action == 'visualization-detail' ? 'active' : '' ?>">
+                                            <?= Html::a('360°', ['/site/visualization'], ['class' => 'link']) ?>
+                                        </li>
                                         <li class="nav-list <?= $action == 'contact' ? 'active' : '' ?>">
                                             <?= Html::a('Contact Us', ['/site/contact'], ['class' => 'link']) ?>
                                         </li>

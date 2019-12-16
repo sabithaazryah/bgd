@@ -1321,16 +1321,16 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
 #panoramas {
   padding: 65px 0 55px;
   position: relative;
-  background: white;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #41bfeb; }
   #panoramas::before {
     content: "";
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: 0px;
     width: 100%;
-    height: 55%;
-    background: #41bfeb; }
+    height: 45%;
+    background: white; }
   @media only screen and (max-width: 768px) {
     #panoramas {
       padding: 45px 0px; } }
@@ -1708,6 +1708,197 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
             font-size: 13px;
             line-height: 22px; } }
 
+/*************************SERVICE_PAGE********************** */
+#service_page #service_list {
+  padding-top: 60px; }
+  #service_page #service_list .main_head {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px; }
+    #service_page #service_list .main_head .head {
+      font-weight: 400;
+      color: #272931; }
+    #service_page #service_list .main_head .info {
+      margin: 25px auto;
+      line-height: 25px; }
+      @media only screen and (min-width: 992px) {
+        #service_page #service_list .main_head .info {
+          max-width: 80%; } }
+    #service_page #service_list .main_head::before {
+      left: 0px;
+      right: 0px;
+      top: auto;
+      bottom: -70px;
+      margin-right: auto;
+      width: 1px;
+      height: 56px; }
+  #service_page #service_list .bg_dark {
+    background: #272931;
+    padding: 85px 0 45px;
+    overflow: hidden; }
+    @media only screen and (max-width: 768px) {
+      #service_page #service_list .bg_dark {
+        padding: 45px 0; } }
+    #service_page #service_list .bg_dark .box {
+      margin-bottom: 30px;
+      text-align: center; }
+      #service_page #service_list .bg_dark .box .img_box {
+        width: 100%;
+        height: 270px;
+        overflow: hidden;
+        position: relative; }
+        #service_page #service_list .bg_dark .box .img_box::after {
+          content: "";
+          background: url("../images/icons/hover_icon.png") no-repeat center rgba(39, 41, 49, 0.6);
+          background-size: 35px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          opacity: 0;
+          visibility: hidden;
+          transition: ease-in-out all 0.3s; }
+        #service_page #service_list .bg_dark .box .img_box .img {
+          width: 100%;
+          height: 270px;
+          background-repeat: no-repeat !important;
+          background-position: center !important;
+          background-size: cover !important;
+          margin-bottom: 20px;
+          transition: ease-in-out all 1s; }
+        @media only screen and (max-width: 768px) {
+          #service_page #service_list .bg_dark .box .img_box {
+            height: 220px; }
+            #service_page #service_list .bg_dark .box .img_box .img {
+              height: 220px; } }
+      #service_page #service_list .bg_dark .box .pro_name {
+        font-size: 20px;
+        color: white;
+        position: relative;
+        padding: 15px 0px; }
+        @media only screen and (max-width: 768px) {
+          #service_page #service_list .bg_dark .box .pro_name {
+            font-size: 15px; } }
+        #service_page #service_list .bg_dark .box .pro_name::after {
+          content: "";
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          width: 25px;
+          height: 2px;
+          margin: auto;
+          background: #9dc029; }
+      #service_page #service_list .bg_dark .box:hover .img_box::after {
+        visibility: visible;
+        opacity: 1; }
+      #service_page #service_list .bg_dark .box:hover .img_box .img {
+        transform: scale(1.5); }
+#service_page.service_inner_page #service_list .bg_dark {
+  padding-bottom: 95px; }
+#service_page.service_inner_page .project_planing {
+  padding: 85px 0; }
+  @media only screen and (max-width: 768px) {
+    #service_page.service_inner_page .project_planing {
+      padding: 0 0 25px; } }
+  #service_page.service_inner_page .project_planing .row {
+    align-items: center; }
+  #service_page.service_inner_page .project_planing .blue_box {
+    background: #41bfeb;
+    padding: 60px 45px 80px;
+    box-shadow: 0px 16px 49px 0px rgba(0, 0, 0, 0.08); }
+    @media only screen and (max-width: 1200px) {
+      #service_page.service_inner_page .project_planing .blue_box {
+        padding: 40px 25px 60px; } }
+    @media only screen and (max-width: 468px) {
+      #service_page.service_inner_page .project_planing .blue_box {
+        padding-bottom: 25px; } }
+    #service_page.service_inner_page .project_planing .blue_box .title_sec {
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 468px) {
+        #service_page.service_inner_page .project_planing .blue_box .title_sec {
+          margin-bottom: 10px; } }
+      #service_page.service_inner_page .project_planing .blue_box .title_sec .sub_title {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 15px; }
+        @media only screen and (max-width: 1200px) {
+          #service_page.service_inner_page .project_planing .blue_box .title_sec .sub_title {
+            font-size: 18px; } }
+        @media only screen and (max-width: 468px) {
+          #service_page.service_inner_page .project_planing .blue_box .title_sec .sub_title {
+            font-size: 15px;
+            margin-bottom: 5px; } }
+      #service_page.service_inner_page .project_planing .blue_box .title_sec .title {
+        font-size: 35px;
+        color: white;
+        font-weight: 500;
+        line-height: 1.114; }
+        @media only screen and (max-width: 1200px) {
+          #service_page.service_inner_page .project_planing .blue_box .title_sec .title {
+            font-size: 28px;
+            line-height: 32px; } }
+        @media only screen and (max-width: 468px) {
+          #service_page.service_inner_page .project_planing .blue_box .title_sec .title {
+            font-size: 21px;
+            line-height: 26px; } }
+    #service_page.service_inner_page .project_planing .blue_box p {
+      font-size: 16px;
+      color: white;
+      line-height: 1.5; }
+      @media (max-width: 1200px) and (min-width: 468px) {
+        #service_page.service_inner_page .project_planing .blue_box p {
+          font-size: 14px;
+          line-height: 22px; } }
+      @media only screen and (max-width: 468px) {
+        #service_page.service_inner_page .project_planing .blue_box p {
+          font-size: 12px;
+          line-height: 22px; } }
+  #service_page.service_inner_page .project_planing .box {
+    padding: 30px; }
+    @media (max-width: 1200px) and (min-width: 992px) {
+      #service_page.service_inner_page .project_planing .box {
+        padding: 20px; } }
+    @media only screen and (max-width: 992px) {
+      #service_page.service_inner_page .project_planing .box {
+        padding: 30px 15px; } }
+    #service_page.service_inner_page .project_planing .box .icon {
+      font-size: 41px;
+      color: #41bfeb;
+      margin-bottom: 30px;
+      display: block; }
+      @media only screen and (max-width: 1200px) {
+        #service_page.service_inner_page .project_planing .box .icon {
+          font-size: 36px;
+          margin-bottom: 20px; } }
+    #service_page.service_inner_page .project_planing .box .title {
+      font-size: 18px;
+      color: #151616;
+      margin-bottom: 20px;
+      font-weight: 500; }
+      @media only screen and (max-width: 1200px) {
+        #service_page.service_inner_page .project_planing .box .title {
+          font-size: 16px;
+          margin-bottom: 15px; } }
+    #service_page.service_inner_page .project_planing .box .info {
+      font-size: 14px;
+      color: #6e6e6e;
+      line-height: 1.714; }
+      @media only screen and (max-width: 1200px) {
+        #service_page.service_inner_page .project_planing .box .info {
+          font-size: 13px;
+          line-height: 23px; } }
+      #service_page.service_inner_page .project_planing .box .info p {
+        font-size: 14px;
+        color: #6e6e6e;
+        line-height: 1.714;
+        margin-bottom: 0px; }
+        @media only screen and (max-width: 1200px) {
+          #service_page.service_inner_page .project_planing .box .info p {
+            font-size: 13px;
+            line-height: 23px; } }
+
 /******************PORTFOLIO_PAGE******************* */
 #portfolio_page .portfolioFilter {
   padding: 60px 0 0; }
@@ -1813,82 +2004,184 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
             display: none; }
 
 /*********************360_panorama********************* */
-#panorama_page #panoramas::before {
+#panorama_page #panoramas {
   background: #272931; }
-#panorama_page #panoramas .main_head .head {
-  font-size: 30px;
-  margin-bottom: 30px; }
-  @media only screen and (max-width: 768px) {
-    #panorama_page #panoramas .main_head .head {
-      font-size: 22px; } }
-#panorama_page #panoramas .main_head .sub_head {
-  font-size: 14px;
-  font-weight: 400;
-  color: #646466;
-  line-height: 25px; }
-  @media only screen and (max-width: 768px) {
-    #panorama_page #panoramas .main_head .sub_head {
-      font-size: 10px;
-      margin-bottom: 10px; } }
-#panorama_page #panoramas .pro_dtl {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 40px; }
-  @media only screen and (min-width: 576px) {
-    #panorama_page #panoramas .pro_dtl {
+  #panorama_page #panoramas .main_head .head {
+    font-size: 30px;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 768px) {
+      #panorama_page #panoramas .main_head .head {
+        font-size: 22px; } }
+  #panorama_page #panoramas .main_head .sub_head {
+    font-size: 14px;
+    font-weight: 400;
+    color: #646466;
+    line-height: 25px; }
+    @media only screen and (min-width: 992px) {
+      #panorama_page #panoramas .main_head .sub_head {
+        max-width: 85%; } }
+    @media only screen and (max-width: 768px) {
+      #panorama_page #panoramas .main_head .sub_head {
+        font-size: 10px;
+        margin-bottom: 10px; } }
+  #panorama_page #panoramas .pro_dtl {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px; }
+    @media only screen and (min-width: 576px) {
+      #panorama_page #panoramas .pro_dtl {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; } }
+    #panorama_page #panoramas .pro_dtl .box {
+      text-align: center; }
+      @media only screen and (min-width: 576px) {
+        #panorama_page #panoramas .pro_dtl .box {
+          padding: 0 15px;
+          border-right: 1px solid #3e414b;
+          width: calc(100% / 3); } }
+      @media only screen and (max-width: 576px) {
+        #panorama_page #panoramas .pro_dtl .box {
+          padding: 20px 0px;
+          border-bottom: 1px solid #3e414b;
+          width: 100%; } }
+      @media only screen and (min-width: 576px) {
+        #panorama_page #panoramas .pro_dtl .box:last-child {
+          border-right: 0px; } }
+      @media only screen and (max-width: 576px) {
+        #panorama_page #panoramas .pro_dtl .box:last-child {
+          border-bottom: 0px; } }
+      #panorama_page #panoramas .pro_dtl .box .title {
+        font-size: 14px;
+        color: #41bfeb;
+        margin-bottom: 15px; }
+      #panorama_page #panoramas .pro_dtl .box li {
+        font-size: 18px;
+        color: white;
+        line-height: normal; }
+        @media only screen and (max-width: 768px) {
+          #panorama_page #panoramas .pro_dtl .box li {
+            font-size: 15px; } }
+      #panorama_page #panoramas .pro_dtl .box .social_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        @media only screen and (min-width: 768px) {
+          #panorama_page #panoramas .pro_dtl .box .social_icon li {
+            margin-right: 35px; } }
+        @media only screen and (max-width: 768px) {
+          #panorama_page #panoramas .pro_dtl .box .social_icon li {
+            margin-right: 15px; } }
+        #panorama_page #panoramas .pro_dtl .box .social_icon li:last-child {
+          margin-right: 0px; }
+        #panorama_page #panoramas .pro_dtl .box .social_icon a {
+          color: white; }
+  #panorama_page #panoramas .plain_btn {
+    background: #41bfeb;
+    color: white;
+    padding: 20px 45px; }
+    @media only screen and (max-width: 576px) {
+      #panorama_page #panoramas .plain_btn {
+        padding: 15px 35px; } }
+  #panorama_page #panoramas .gallery_listing {
+    margin: 75px 0 70px; }
+    #panorama_page #panoramas .gallery_listing .img_box {
+      margin: 0 15px;
+      position: relative; }
+      #panorama_page #panoramas .gallery_listing .img_box::after {
+        content: "";
+        background: url(../images/icons/gallery_hvr.png) no-repeat center rgba(22, 27, 29, 0.7);
+        background-size: 35px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease-in-out all 0.3s; }
+      #panorama_page #panoramas .gallery_listing .img_box:hover::after {
+        opacity: 1;
+        visibility: visible; }
+  @media only screen and (min-width: 768px) {
+    #panorama_page #panoramas .qck_action {
       display: flex;
       align-items: center;
-      justify-content: space-around; } }
-  #panorama_page #panoramas .pro_dtl .box {
-    text-align: center; }
-    @media only screen and (min-width: 576px) {
-      #panorama_page #panoramas .pro_dtl .box {
-        padding: 0 15px;
-        border-right: 1px solid #3e414b;
-        width: calc(100% / 3); } }
-    @media only screen and (max-width: 576px) {
-      #panorama_page #panoramas .pro_dtl .box {
-        padding: 20px 0px;
-        border-bottom: 1px solid #3e414b;
+      justify-content: center; } }
+  #panorama_page #panoramas .qck_action .title_sec {
+    font-size: 24px;
+    color: white;
+    background: #9dc029;
+    padding: 25px 25px 25px 45px; }
+    @media only screen and (max-width: 992px) {
+      #panorama_page #panoramas .qck_action .title_sec {
+        font-size: 19px;
+        padding: 15px 15px 15px 25px; } }
+    @media only screen and (max-width: 768px) {
+      #panorama_page #panoramas .qck_action .title_sec {
+        width: 100%;
+        text-align: center; } }
+    @media only screen and (max-width: 468px) {
+      #panorama_page #panoramas .qck_action .title_sec {
+        text-align: left; } }
+  #panorama_page #panoramas .qck_action .cntnt_sec {
+    background: #000;
+    padding: 26.5px 45px; }
+    @media only screen and (max-width: 992px) {
+      #panorama_page #panoramas .qck_action .cntnt_sec {
+        font-size: 19px;
+        padding: 15px 15px 15px 25px; } }
+    @media only screen and (max-width: 768px) {
+      #panorama_page #panoramas .qck_action .cntnt_sec {
         width: 100%; } }
-    @media only screen and (min-width: 576px) {
-      #panorama_page #panoramas .pro_dtl .box:last-child {
-        border-right: 0px; } }
-    @media only screen and (max-width: 576px) {
-      #panorama_page #panoramas .pro_dtl .box:last-child {
-        border-bottom: 0px; } }
-    #panorama_page #panoramas .pro_dtl .box .title {
-      font-size: 14px;
-      color: #41bfeb;
-      margin-bottom: 15px; }
-    #panorama_page #panoramas .pro_dtl .box li {
-      font-size: 18px;
-      color: white;
-      line-height: normal; }
-      @media only screen and (max-width: 768px) {
-        #panorama_page #panoramas .pro_dtl .box li {
-          font-size: 15px; } }
-    #panorama_page #panoramas .pro_dtl .box .social_icon {
+    #panorama_page #panoramas .qck_action .cntnt_sec ul {
       display: flex;
-      align-items: center;
-      justify-content: center; }
-      @media only screen and (min-width: 768px) {
-        #panorama_page #panoramas .pro_dtl .box .social_icon li {
-          margin-right: 35px; } }
+      justify-content: space-around; }
       @media only screen and (max-width: 768px) {
-        #panorama_page #panoramas .pro_dtl .box .social_icon li {
-          margin-right: 15px; } }
-      #panorama_page #panoramas .pro_dtl .box .social_icon li:last-child {
-        margin-right: 0px; }
-      #panorama_page #panoramas .pro_dtl .box .social_icon a {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul {
+          justify-content: center; } }
+      @media only screen and (max-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul {
+          display: block; } }
+      @media only screen and (min-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul li {
+          padding: 0 35px;
+          border-right: 1px solid #454141; } }
+      @media only screen and (max-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul li {
+          padding: 15px 0px;
+          border-bottom: 1px solid #454141;
+          width: 100%; } }
+      @media only screen and (min-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul li:first-child {
+          padding-left: 0px; } }
+      @media only screen and (max-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul li:first-child {
+          padding-top: 0px; } }
+      @media only screen and (min-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul li:last-child {
+          border-right: 0px;
+          padding-right: 0px; } }
+      @media only screen and (max-width: 468px) {
+        #panorama_page #panoramas .qck_action .cntnt_sec ul li:last-child {
+          border-bottom: 0px;
+          padding-bottom: 0px; } }
+      #panorama_page #panoramas .qck_action .cntnt_sec ul a {
+        font-size: 19px;
         color: white; }
-#panorama_page #panoramas .plain_btn {
-  background: #41bfeb;
-  color: white;
-  padding: 20px 45px; }
-  @media only screen and (max-width: 576px) {
-    #panorama_page #panoramas .plain_btn {
-      padding: 15px 35px; } }
+        @media only screen and (max-width: 992px) {
+          #panorama_page #panoramas .qck_action .cntnt_sec ul a {
+            font-size: 14px; } }
+        #panorama_page #panoramas .qck_action .cntnt_sec ul a i {
+          color: #41bfeb;
+          font-size: 21px;
+          margin-right: 10px; }
+          @media only screen and (max-width: 992px) {
+            #panorama_page #panoramas .qck_action .cntnt_sec ul a i {
+              font-size: 16px;
+              margin-right: 5px; } }
+#panorama_page.panorama_dtl_page #panoramas::before {
+  height: 30%; }
 
 /********************CONTACT_PAGE_LAYOUT******************* */
 #contact_page .contct_info_sec {

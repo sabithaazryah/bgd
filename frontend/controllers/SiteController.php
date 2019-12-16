@@ -74,7 +74,7 @@ class SiteController extends Controller {
     }
 
     /**
-     * Displays homepage.
+     * Displays about.
      *
      * @return mixed
      */
@@ -97,6 +97,31 @@ class SiteController extends Controller {
         return $this->render('contact', [
                     'contact_info' => $contact_info,
                     'meta_tags' => $meta_tags,
+        ]);
+    }
+
+    public function actionVisualization() {
+        return $this->render('visualization', [
+        ]);
+    }
+
+    public function actionVisualizationDetail() {
+        return $this->render('visualization-detail', [
+        ]);
+    }
+
+    public function actionPortfolio() {
+        return $this->render('portfolio', [
+        ]);
+    }
+
+    public function actionResidential() {
+        return $this->render('residential_service', [
+        ]);
+    }
+
+    public function actionInterior() {
+        return $this->render('interior', [
         ]);
     }
 

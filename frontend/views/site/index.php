@@ -11,7 +11,6 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
 }
 ?>
 
-
 <section id="main-slider">
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
         <div class="carousel-inner">
@@ -519,3 +518,4 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
 
     });
 </script>
+

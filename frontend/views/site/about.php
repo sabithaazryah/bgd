@@ -11,7 +11,6 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
 }
 ?>
 
-
 <div id="about_page" class="inner-page">
 
     <section id="banner" data-parallax="scroll" data-image-src="<?= Yii::$app->homeUrl ?>assets/images/banner/about.jpg">
@@ -143,7 +142,6 @@ if (isset($meta_tags->meta_title) && $meta_tags->meta_title != '') {
     </section>
 
 </div>
-
 
 
 <script>
